@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{DFAD6A2C-2C7E-1E2D-87CB-5ADFCAB478CF}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_2;UNITY_4_6;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\AdColony.cs" />
+     <Compile Include="Assets\Plugins\Analytics\Analytics.cs" />
+     <Compile Include="Assets\Plugins\Analytics\GoogleUniversalAnalytics.cs" />
+     <Compile Include="Assets\Plugins\Analytics\Platform-WindowsStore\File.cs" />
+     <Compile Include="Assets\Plugins\GameThrive\Example\GameControllerExample.cs" />
+     <Compile Include="Assets\Plugins\GameThrive\GameThrive.cs" />
+     <Compile Include="Assets\Plugins\GameThrive\GameThriveAndroid.cs" />
+     <Compile Include="Assets\Plugins\GameThrive\GameThrivePlatform.cs" />
+     <Compile Include="Assets\Plugins\GameThrive\GameThriveWP.cs" />
+     <Compile Include="Assets\Plugins\GameThrive\MiniJSON.cs" />
+     <Compile Include="Assets\Plugins\MiniJSON.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\LanguageSelection.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIButton.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIButtonActivate.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIButtonColor.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIButtonKeys.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIButtonMessage.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIButtonOffset.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIButtonRotation.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIButtonScale.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UICenterOnChild.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UICenterOnClick.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIDragCamera.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIDragDropContainer.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIDragDropItem.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIDragDropRoot.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIDragObject.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIDragResize.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIDragScrollView.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIDraggableCamera.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIEventTrigger.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIForwardEvents.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIGrid.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIImageButton.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIKeyBinding.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIKeyNavigation.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIPlayAnimation.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIPlaySound.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIPlayTween.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIPopupList.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIProgressBar.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UISavedOption.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIScrollBar.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIScrollView.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UISlider.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UISoundVolume.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UITable.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIToggle.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIToggledComponents.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIToggledObjects.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIWidgetContainer.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Interaction\UIWrapContent.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\ActiveAnimation.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\AnimationOrTween.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\BMFont.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\BMGlyph.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\BMSymbol.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\BetterList.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\ByteReader.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\EventDelegate.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\Localization.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\NGUIDebug.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\NGUIMath.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\NGUIText.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\NGUITools.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\PropertyBinding.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\PropertyReference.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\RealTime.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\SpringPanel.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\UIDrawCall.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\UIEventListener.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\UIGeometry.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\UIRect.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Internal\UIWidget.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\AnimatedAlpha.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\AnimatedColor.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\SpringPosition.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\TweenAlpha.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\TweenColor.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\TweenFOV.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\TweenHeight.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\TweenOrthoSize.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\TweenPosition.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\TweenRotation.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\TweenScale.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\TweenTransform.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\TweenVolume.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\TweenWidth.cs" />
+     <Compile Include="Assets\Plugins\NGUI\Tweening\UITweener.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UI2DSprite.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UI2DSpriteAnimation.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UIAnchor.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UIAtlas.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UICamera.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UIFont.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UIInput.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UILabel.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UILocalize.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UIOrthoCamera.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UIPanel.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UIRoot.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UISprite.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UISpriteAnimation.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UISpriteData.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UIStretch.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UITextList.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UITexture.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UITooltip.cs" />
+     <Compile Include="Assets\Plugins\NGUI\UI\UIViewport.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Android\OpenIAB_Android.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\IOpenIAB.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Inventory.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\JSON.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\OpenIAB.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\OpenIABEventManager.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Options.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\OptionsVerifyMode.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Purchase.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\SkuDetails.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\WP8\OpenIAB_WP8.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\iOS\OpenIAB_iOS.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisement.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Adapter.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\DeviceInfo\DeviceInfo.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\DeviceInfo\DeviceInfoAndroid.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\DeviceInfo\DeviceInfoEditor.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\DeviceInfo\DeviceInfoIos.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\DeviceInfo\DeviceInfoPlatform.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Events\Event.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Events\EventJSON.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Events\EventManager.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\HTTP\HTTPManager.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\HTTP\HTTPRequest.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\HTTP\HTTPResponse.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\HTTP\RetryRequest.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Mediation\AdapterManager.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Mediation\ConfigManager.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Mediation\Engine.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Mediation\IntervalManager.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Mediation\Zone.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Mediation\ZoneManager.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Misc\AsyncExec.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Misc\MiniJSON.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Misc\Settings.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\Misc\Utils.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\PictureAds\PictureAd.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\PictureAds\PictureAdAdapter.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\PictureAds\PictureAdsFrameManager.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\PictureAds\PictureAdsManager.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\PictureAds\PictureAdsParser.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\PictureAds\PictureAdsRequestsManager.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\ShowOptionsExtended.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAds.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsAndroid.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsEditor.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsEditorPlaceholder.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsExternal.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsIos.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsIosBridge.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\UnityAdsPlatform.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\Advertisements\VideoAds\VideoAdAdapter.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\ShowOptions.cs" />
+     <Compile Include="Assets\Standard Assets\UnityAds\Scripts\ShowResult.cs" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\NGUI\ReadMe - 3.5.6.txt" />
+     <None Include="Assets\Plugins\Android\unityads\proguard-project.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\Plugins\Android\facebook\proguard-project.txt" />
+     <None Include="Assets\Plugins\Android\facebook\bin\R.txt" />
+     <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_button_blue.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_tooltip_bubble.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\values-xhdpi\dimens.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_friendpickerfragment.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\values\attrs.xml" />
+     <None Include="Assets\Font\2x\BigBottom_90.fnt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+     <None Include="Assets\Plugins\Android\facebook\res\values-he\strings.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+     <None Include="Assets\Plugins\Android\facebook\res\values-hdpi\dimens.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest_GameThrive_ADM_Template.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\values-mdpi\dimens.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_placepickerfragment.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_button_like.xml" />
+     <None Include="Assets\Resources\hats.xml" />
+     <None Include="Assets\Plugins\Android\facebook\bin\AndroidManifest.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_search_bar_layout.xml" />
+     <None Include="Assets\Resources\StartAppData.txt" />
+     <None Include="Assets\Plugins\Android\facebook\bin\proguard.txt" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_button_like_selected.xml" />
+     <None Include="Assets\Plugins\Android\BaseGameUtils\AndroidManifest.xml" />
+     <None Include="Assets\Font\2x\BigBottom_33.fnt" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_top_background.xml" />
+     <None Include="Assets\Plugins\Android\res\values\ids.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="Assets\Plugins\Android\res\values\version.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="Assets\link.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_checkbox.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_search_box.xml" />
+     <None Include="Assets\Font\1x\bigbottom_60.txt" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_image.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\values\colors.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest_GameThrive_GCM_Template.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_activity_circle_row.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\Plugins\Android\unityads\res\values\strings.xml" />
+     <None Include="Assets\Plugins\Android\facebook\build.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\values\strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\analytics.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\values\styles.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\Font\1x\bigbottom_90.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\Plugins\Android\BaseGameUtils\res\values\gamehelper_strings.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\values-iw\strings.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_usersettingsfragment_background_gradient.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\values-ldpi\dimens.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_placepickerfragment_list_row.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_picker_top_button.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_usersettingsfragment.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_list_section_header.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_picker_list_selector_background_transition.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest_GameThrive_ADM_AND_GCM_Template.xml" />
+     <None Include="Assets\Font\2x\BigBottom_60.fnt" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_picker_item_background.xml" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\Plugins\Android\MainLibProj\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\values-es\strings.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_list_row.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\Font\1x\bigbottom_33.txt" />
+     <None Include="Assets\Plugins\Android\facebook\res\values\drawables.xml" />
+     <None Include="Assets\Plugins\Android\facebook\AndroidManifest.xml" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_title_bar.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_top_button.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_button_check.xml" />
+     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_login_activity_layout.xml" />
+     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+     <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_title_bar_stub.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_loginbutton_silver.xml" />
+     <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_picker_list_selector.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="IFacebook">
+ <HintPath>/Users/playim/Desktop/ElectionRun_Turkey/Assets/Facebook/Scripts/IFacebook.dll</HintPath>
+ </Reference>
+ <Reference Include="GameThriveSDK">
+ <HintPath>/Users/playim/Desktop/ElectionRun_Turkey/Assets/Plugins/GameThriveSDK.dll</HintPath>
+ </Reference>
+ <Reference Include="GPGSUtils">
+ <HintPath>/Users/playim/Desktop/ElectionRun_Turkey/Assets/Plugins/GPGSUtils.dll</HintPath>
+ </Reference>
+ <Reference Include="OpenIAB_W8Plugin">
+ <HintPath>/Users/playim/Desktop/ElectionRun_Turkey/Assets/Plugins/OpenIAB_W8Plugin.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

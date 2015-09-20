@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!129 &1
+PlayerSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 3
+  AndroidProfiler: 0
+  defaultScreenOrientation: 3
+  targetDevice: 2
+  targetGlesGraphics: 1
+  targetResolution: 0
+  accelerometerFrequency: 60
+  companyName: Yepi
+  productName: Run Yepi Run
+  defaultCursor: {fileID: 0}
+  cursorHotspot: {x: 0, y: 0}
+  defaultScreenWidth: 1024
+  defaultScreenHeight: 768
+  defaultScreenWidthWeb: 800
+  defaultScreenHeightWeb: 600
+  m_RenderingPath: 1
+  m_MobileRenderingPath: 1
+  m_ActiveColorSpace: 0
+  m_MTRendering: 1
+  m_MobileMTRendering: 0
+  m_UseDX11: 1
+  m_Stereoscopic3D: 0
+  iosShowActivityIndicatorOnLoading: -1
+  androidShowActivityIndicatorOnLoading: -1
+  displayResolutionDialog: 1
+  allowedAutorotateToPortrait: 0
+  allowedAutorotateToPortraitUpsideDown: 0
+  allowedAutorotateToLandscapeRight: 1
+  allowedAutorotateToLandscapeLeft: 1
+  useOSAutorotation: 1
+  use32BitDisplayBuffer: 1
+  use24BitDepthBuffer: 1
+  defaultIsFullScreen: 1
+  defaultIsNativeResolution: 1
+  runInBackground: 0
+  captureSingleScreen: 0
+  Override IPod Music: 0
+  Prepare IOS For Recording: 0
+  enableHWStatistics: 1
+  usePlayerLog: 1
+  stripPhysics: 0
+  forceSingleInstance: 0
+  resizableWindow: 0
+  useMacAppStoreValidation: 0
+  gpuSkinning: 0
+  xboxPIXTextureCapture: 0
+  xboxEnableAvatar: 0
+  xboxEnableKinect: 0
+  xboxEnableKinectAutoTracking: 0
+  xboxEnableFitness: 0
+  macFullscreenMode: 2
+  xboxSpeechDB: 0
+  xboxEnableHeadOrientation: 0
+  xboxEnableGuest: 0
+  videoMemoryForVertexBuffers: 0
+  m_SupportedAspectRatios:
+    4:3: 1
+    5:4: 1
+    16:10: 1
+    16:9: 1
+    Others: 1
+  iPhoneBundleIdentifier: com.yepi.runyepirun
+  metroEnableIndependentInputSource: 0
+  metroEnableLowLatencyPresentationAPI: 0
+  productGUID: 2564829f39eaba84faf3d31d3c812f74
+  iPhoneBundleVersion: 2.0.5
+  AndroidBundleVersionCode: 14
+  AndroidMinSdkVersion: 11
+  AndroidPreferredInstallLocation: 1
+  aotOptions: 
+  apiCompatibilityLevel: 2
+  iPhoneStrippingLevel: 0
+  iPhoneScriptCallOptimization: 0
+  ForceInternetPermission: 0
+  ForceSDCardPermission: 0
+  CreateWallpaper: 0
+  APKExpansionFiles: 0
+  StripUnusedMeshComponents: 0
+  iPhoneSdkVersion: 988
+  iPhoneTargetOSVersion: 22
+  uIPrerenderedIcon: 1
+  uIRequiresPersistentWiFi: 1
+  uIStatusBarHidden: 1
+  uIExitOnSuspend: 0
+  uIStatusBarStyle: 0
+  iPhoneSplashScreen: {fileID: 2800000, guid: 251163301c47244458a2d3f00a599a58, type: 3}
+  iPhoneHighResSplashScreen: {fileID: 2800000, guid: 882754cc6570cdc4c8ab80337f94cad5,
+    type: 3}
+  iPhoneTallHighResSplashScreen: {fileID: 2800000, guid: 2415b7f95b0726848941eb329beef330,
+    type: 3}
+  iPadPortraitSplashScreen: {fileID: 0}
+  iPadHighResPortraitSplashScreen: {fileID: 0}
+  iPadLandscapeSplashScreen: {fileID: 2800000, guid: 3d0f0da92a50f4144ac38a431ce6747b,
+    type: 3}
+  iPadHighResLandscapeSplashScreen: {fileID: 2800000, guid: 954752f7d486d86479b39fd50178c937,
+    type: 3}
+  AndroidTargetDevice: 0
+  AndroidSplashScreenScale: 2
+  AndroidKeystoreName: C:/Unity Projects/YepiRunner/user.keystore
+  AndroidKeyaliasName: runyepirun
+  resolutionDialogBanner: {fileID: 2800000, guid: 2033f1dffc07e444ea41aa4df032b29b,
+    type: 3}
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - m_Icon: {fileID: 2800000, guid: 1a3b47aa784ba3346a4ede659f96ca21, type: 3}
+      m_Size: 128
+  - m_BuildTarget: Android
+    m_Icons:
+    - m_Icon: {fileID: 2800000, guid: 7e201e26cda323b41b850b976d427b74, type: 3}
+      m_Size: 144
+    - m_Icon: {fileID: 2800000, guid: f4957769a7958b547b620d33662466d0, type: 3}
+      m_Size: 96
+    - m_Icon: {fileID: 2800000, guid: 828956c2a5f473042b7180b1d0850b24, type: 3}
+      m_Size: 72
+    - m_Icon: {fileID: 2800000, guid: 6a9b36c76dabf694085bec3e0005895a, type: 3}
+      m_Size: 48
+    - m_Icon: {fileID: 2800000, guid: ccb3df359192cca46ba6625b51cc4fec, type: 3}
+      m_Size: 36
+  - m_BuildTarget: iPhone
+    m_Icons:
+    - m_Icon: {fileID: 2800000, guid: 1a3b47aa784ba3346a4ede659f96ca21, type: 3}
+      m_Size: 152
+    - m_Icon: {fileID: 2800000, guid: 7e201e26cda323b41b850b976d427b74, type: 3}
+      m_Size: 144
+    - m_Icon: {fileID: 0}
+      m_Size: 120
+    - m_Icon: {fileID: 0}
+      m_Size: 114
+    - m_Icon: {fileID: 2800000, guid: f4957769a7958b547b620d33662466d0, type: 3}
+      m_Size: 76
+    - m_Icon: {fileID: 2800000, guid: 828956c2a5f473042b7180b1d0850b24, type: 3}
+      m_Size: 72
+    - m_Icon: {fileID: 0}
+      m_Size: 57
+  - m_BuildTarget: Standalone
+    m_Icons:
+    - m_Icon: {fileID: 2800000, guid: 433a456fdfb48c140bb27b3db9bfdcf3, type: 3}
+      m_Size: 1024
+    - m_Icon: {fileID: 2800000, guid: 1a3b47aa784ba3346a4ede659f96ca21, type: 3}
+      m_Size: 512
+    - m_Icon: {fileID: 0}
+      m_Size: 256
+    - m_Icon: {fileID: 2800000, guid: 7e201e26cda323b41b850b976d427b74, type: 3}
+      m_Size: 128
+    - m_Icon: {fileID: 2800000, guid: 6a9b36c76dabf694085bec3e0005895a, type: 3}
+      m_Size: 48
+    - m_Icon: {fileID: 2800000, guid: ccb3df359192cca46ba6625b51cc4fec, type: 3}
+      m_Size: 32
+    - m_Icon: {fileID: 0}
+      m_Size: 16
+  m_BuildTargetBatching:
+  - m_BuildTarget: Android
+    m_StaticBatching: 1
+    m_DynamicBatching: 1
+  - m_BuildTarget: Web
+    m_StaticBatching: 0
+    m_DynamicBatching: 1
+  webPlayerTemplate: APPLICATION:Black Background
+  m_TemplateCustomTags: {}
+  XboxTitleId: 
+  XboxImageXexPath: 
+  XboxSpaPath: 
+  XboxGenerateSpa: 0
+  XboxDeployKinectResources: 0
+  XboxSplashScreen: {fileID: 0}
+  xboxEnableSpeech: 0
+  xboxAdditionalTitleMemorySize: 0
+  xboxDeployKinectHeadOrientation: 0
+  xboxDeployKinectHeadPosition: 0
+  ps3TitleConfigPath: 
+  ps3DLCConfigPath: 
+  ps3ThumbnailPath: 
+  ps3BackgroundPath: 
+  ps3SoundPath: 
+  ps3TrophyCommId: 
+  ps3NpCommunicationPassphrase: 
+  ps3TrophyPackagePath: 
+  ps3BootCheckMaxSaveGameSizeKB: 128
+  ps3TrophyCommSig: 
+  ps3SaveGameSlots: 1
+  ps3TrialMode: 0
+  psp2Splashimage: {fileID: 0}
+  psp2LiveAreaGate: {fileID: 0}
+  psp2LiveAreaBackround: {fileID: 0}
+  psp2NPTrophyPackPath: 
+  psp2NPCommsID: 
+  psp2NPCommsPassphrase: 
+  psp2NPCommsSig: 
+  psp2ParamSfxPath: 
+  psp2PackagePassword: 
+  psp2DLCConfigPath: 
+  psp2ThumbnailPath: 
+  psp2BackgroundPath: 
+  psp2SoundPath: 
+  psp2TrophyCommId: 
+  psp2TrophyPackagePath: 
+  psp2PackagedResourcesPath: 
+  flashStrippingLevel: 2
+  spritePackerPolicy: DefaultPackerPolicy
+  scriptingDefineSymbols:
+    7: 
+    16: 
+  metroPackageName: YepiRunner
+  metroPackageLogo: 
+  metroPackageLogo140: 
+  metroPackageLogo180: 
+  metroPackageVersion: 1.0.0.0
+  metroCertificatePath: 
+  metroCertificatePassword: 
+  metroCertificateSubject: 
+  metroCertificateIssuer: 
+  metroCertificateNotAfter: 0000000000000000
+  metroApplicationDescription: YepiRunner
+  metroTileLogo80: 
+  metroTileLogo: 
+  metroTileLogo140: 
+  metroTileLogo180: 
+  metroTileWideLogo80: 
+  metroTileWideLogo: 
+  metroTileWideLogo140: 
+  metroTileWideLogo180: 
+  metroTileSmallLogo80: 
+  metroTileSmallLogo: 
+  metroTileSmallLogo140: 
+  metroTileSmallLogo180: 
+  metroSmallTile80: 
+  metroSmallTile: 
+  metroSmallTile140: 
+  metroSmallTile180: 
+  metroLargeTile80: 
+  metroLargeTile: 
+  metroLargeTile140: 
+  metroLargeTile180: 
+  metroTileShortName: Run Yepi Run
+  metroCommandLineArgsFile: 
+  metroTileShowName: 0
+  metroMediumTileShowName: 0
+  metroLargeTileShowName: 0
+  metroWideTileShowName: 0
+  metroDefaultTileSize: 1
+  metroTileForegroundText: 1
+  metroTileBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  metroSplashScreenImage: 
+  metroSplashScreenImage140: 
+  metroSplashScreenImage180: 
+  metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  metroSplashScreenUseBackgroundColor: 0
+  metroCapabilities:
+    EnterpriseAuthentication: 0
+    InternetClient: 0
+    InternetClientServer: 0
+    Location: 0
+    Microphone: 0
+    MusicLibrary: 0
+    PicturesLibrary: 0
+    PrivateNetworkClientServer: 0
+    Proximity: 0
+    RemovableStorage: 0
+    SharedUserCertificates: 0
+    VideosLibrary: 0
+    WebCam: 0
+  metroUnprocessedPlugins: []
+  metroCompilationOverrides: 1
+  blackberryDeviceAddress: 
+  blackberryDevicePassword: 
+  blackberryTokenPath: 
+  blackberryTokenExires: 
+  blackberryTokenAuthor: 
+  blackberryTokenAuthorId: 
+  blackberryAuthorId: 
+  blackberryCskPassword: 
+  blackberrySaveLogPath: 
+  blackberryAuthorIdOveride: 0
+  blackberrySharedPermissions: 0
+  blackberryCameraPermissions: 0
+  blackberryGPSPermissions: 0
+  blackberryDeviceIDPermissions: 0
+  blackberryMicrophonePermissions: 0
+  blackberryGamepadSupport: 0
+  blackberryBuildId: 0
+  blackberryLandscapeSplashScreen: {fileID: 0}
+  blackberryPortraitSplashScreen: {fileID: 0}
+  blackberrySquareSplashScreen: {fileID: 0}
+  tizenProductDescription: 
+  tizenProductURL: 
+  tizenCertificatePath: 
+  tizenCertificatePassword: 
+  tizenGPSPermissions: 0
+  tizenMicrophonePermissions: 0
+  stvDeviceAddress: 
+  firstStreamedLevelWithResources: 0
+  unityRebuildLibraryVersion: 9
+  unityForwardCompatibleVersion: 39
+  unityStandardAssetsVersion: 0

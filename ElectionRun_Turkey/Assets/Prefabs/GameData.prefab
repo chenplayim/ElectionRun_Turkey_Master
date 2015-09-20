@@ -1,0 +1,309 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400004}
+  - 82: {fileID: 8200000}
+  - 114: {fileID: 11400006}
+  - 114: {fileID: 11400008}
+  - 114: {fileID: 11400010}
+  m_Layer: 0
+  m_Name: GameData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: f33a16df0c507654b869a280fbcb8b93, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .300000012
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60de36a5ff2190c4281acfb439ac33a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GravityYPerFrame: 0
+  BoyAnimator: Boy
+  GirlAnimator: Girl
+  UserNameTextPrefab: {fileID: 100000, guid: 3ceb7da820286704b8a558beff2a6c11, type: 2}
+  SpeedUpgrades:
+  - 4
+  - 4.0999999
+  - 4.30000019
+  - 4.5
+  - 4.69999981
+  - 4.9000001
+  - 5.0999999
+  - 5.30000019
+  - 5.5
+  - 5.69999981
+  - 5.9000001
+  - 6.0999999
+  - 6.30000019
+  - 6.5
+  - 6.69999981
+  JumpHeightUpgrades:
+  - 2
+  - 2.0999999
+  - 2.25
+  - 2.4000001
+  - 2.54999995
+  - 2.70000005
+  - 2.8499999
+  - 3
+  - 3.1500001
+  - 3.29999995
+  - 3.45000005
+  - 3.5999999
+  - 3.75
+  - 4
+  - 4.25
+  DoubleJumpHeightUpgrades:
+  - 1
+  - 1.10000002
+  - 1.25
+  - 1.39999998
+  - 1.54999995
+  - 1.70000005
+  - 1.85000002
+  - 2
+  - 2.1500001
+  - 2.29999995
+  - 2.45000005
+  - 2.5999999
+  - 2.75
+  - 3
+  - 3.25
+  BubbleUpgrades:
+  - 15
+  - 18.2000008
+  - 21.3999996
+  - 24.6000004
+  - 27.7999992
+  - 31
+  - 34.2000008
+  - 37.4000015
+  - 40.5999985
+  - 43.7999992
+  - 47
+  - 50.2000008
+  - 53.4000015
+  - 56.5999985
+  - 59.7999992
+  SpeedUpgradeCosts: 1400000064000000fa000000f4010000bc0200007e040000a406000060090000ac0d00005c12000070170000461e0000482600000c3000008c3c0000
+  JumpHeightUpgradeCosts: 32000000960000002c0100005802000020030000140500006c070000280a0000d80e000088130000c81900000820000004290000bc34000068420000
+  DoubleJumpHeightUpgradeCosts: 32000000960000002c0100005802000020030000140500006c070000280a0000d80e000088130000c81900000820000004290000bc34000068420000
+  BubbleUpgradeCosts: 1400000064000000fa000000f4010000bc0200007e040000a406000060090000ac0d00005c12000070170000461e0000482600000c3000008c3c0000
+  PlayerName: 
+  CurrentSpeedLevel: 0
+  CurrentJumpHeightLevel: 0
+  CurrentDoubleJumpHeightLevel: 0
+  CurrentBubbleLevel: 0
+  CurrentHat: 
+  BubbleShieldDuration: 10
+  Coins: 0
+  CurrentCharacter: Boy
+  GhostPopulation: 10
+  LifetimeCoins: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7967f32407cbb54890977be170d7067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63d5681ff41450145a37ec5630f5d107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReferenceAtlases:
+  - {fileID: 11400000, guid: 3fd48da343efd9e46bf10b894ac34059, type: 2}
+  - {fileID: 11400000, guid: a69878a859fa01a48a9e5d5863178e25, type: 2}
+  - {fileID: 11400000, guid: 695e523c64d080448b15c5f08694f1d0, type: 2}
+  - {fileID: 11400000, guid: 24d539ce6538e2047b5602cf1da60719, type: 2}
+  DefaultAtlases:
+  - {fileID: 11400000, guid: d33c8b8efd39c1443af5d21d122bd051, type: 2}
+  - {fileID: 11400000, guid: 884e460705207554888632ca844994c0, type: 2}
+  - {fileID: 11400000, guid: 1f8ad04b67983e4438fa5b814fd6ea0e, type: 2}
+  - {fileID: 11400000, guid: 0351521d82946694996d7612944ecd7e, type: 2}
+  Atlases2x:
+  - {fileID: 11400000, guid: 968f867c3a3963247a4c8a0530c875d1, type: 2}
+  - {fileID: 11400000, guid: 26380b52939657a44a935e1d1b461ee8, type: 2}
+  - {fileID: 11400000, guid: a2ca675521644924cac536e045646adc, type: 2}
+  - {fileID: 11400000, guid: 7fc7cccbe0ee0494697f611d462d9cf7, type: 2}
+  ReferenceFonts:
+  - {fileID: 11400000, guid: 195fce9464c70174c875b094f0253a25, type: 2}
+  - {fileID: 11400000, guid: 3c96291d56523ae4a9285fe115648565, type: 2}
+  - {fileID: 11400002, guid: da8ebaae3aef6a14c8811f5bb3f7407e, type: 2}
+  DefaultFonts:
+  - {fileID: 11400000, guid: 58bbb78f0f3886c42acf7fd4f5590650, type: 2}
+  - {fileID: 11400000, guid: 873369cb4ac237e42982549b85190e21, type: 2}
+  - {fileID: 11400000, guid: 73660609f4ea4aa43b069a9e143211dc, type: 2}
+  Fonts2x:
+  - {fileID: 11400000, guid: 1db9101b517f7564a82fabbd95ffe660, type: 2}
+  - {fileID: 11400000, guid: cf4b72975a0e1b041b9c05b2155c1f76, type: 2}
+  - {fileID: 11400000, guid: 9895731bb07c7ef4a9df83b41ee6633a, type: 2}
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17aeef7ce6c142344959e650cab20151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  method: 0
+  style: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  ignoreTimeScale: 1
+  delay: 0
+  duration: 1
+  steeperCurves: 0
+  tweenGroup: 0
+  onFinished: []
+  eventReceiver: {fileID: 0}
+  callWhenFinished: 
+  from: 1
+  to: 1
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec1253c54a1f414eb36ff3c524e9e99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2633781d0a6fb40970914ff3dd7995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

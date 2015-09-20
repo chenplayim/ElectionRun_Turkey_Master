@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AddedFuncionallity.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MainMenuController.cs" Line="339" Column="30" />
+      <File FileName="Assets/Scripts/MyVungle.cs" Line="49" Column="17" />
+      <File FileName="Assets/Scripts/AdColonyCommends.cs" Line="184" Column="25" />
+      <File FileName="Assets/Scripts/BillingManager.cs" Line="14" Column="4" />
+      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="42" Column="77" />
+      <File FileName="Assets/Plugins/Vungle/Android/VungleAndroid.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/Vungle/Android/VungleAndroidManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UpgradeScreenController.cs" Line="527" Column="21" />
+      <File FileName="Assets/Scripts/AppManager.cs" Line="31" Column="46" />
+      <File FileName="Assets/Scripts/AddedFuncionallity.cs" Line="261" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

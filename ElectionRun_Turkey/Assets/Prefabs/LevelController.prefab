@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: LevelController
+  m_TagString: Untagged
+  m_Icon: {fileID: 120240766, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.47111988, y: -2.91295767, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860e0824a23c8584cb34d2fd504ae446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlatformPrefab: {fileID: 100006, guid: d8274bc9742fcb743bb63fcc4bee1b9b, type: 2}
+  CoinPrefab: {fileID: 100000, guid: 5e44085bd5d6f2e4a807d9f1faa06f16, type: 2}
+  BubblePowerupPrefab: {fileID: 100000, guid: 68e8744d8360fda45b2eb19830bcac51, type: 2}
+  ObstaclePrefabs:
+  - {fileID: 100000, guid: f46f1130c3143d44a87c0ad04c4c0065, type: 2}
+  - {fileID: 100000, guid: 43559dbe617dfbb4483a7a62aa1f62b3, type: 2}
+  FirstPlatform: {fileID: 0}
+  WeedPrefabs:
+  - {fileID: 100000, guid: 4b7700f048a12d14cacf6b6e903bbbab, type: 2}
+  - {fileID: 100000, guid: 68814881eeddca148a4ffa3f1a22ce02, type: 2}
+  - {fileID: 100000, guid: 343881bc41a25c24c96ede8e07f14779, type: 2}
+  GrassPrefabs:
+  - {fileID: 100000, guid: 93c240e7f707a774b8113f896d03382b, type: 2}
+  - {fileID: 100000, guid: 0906e152e1b537041ae21535975ec348, type: 2}
+  TreePrefabs:
+  - {fileID: 100000, guid: f2bcc9a68ac8b9a47a246d8ee37511a4, type: 2}
+  - {fileID: 100000, guid: f42ff8a976145aa4bb8f6467ca47bc11, type: 2}
+  - {fileID: 100000, guid: bba6dca257a4e0c4eb02017298677c69, type: 2}
+  - {fileID: 100000, guid: a9113c5b509c0cc4eacfcb0643295bca, type: 2}
+  HangingRootPrefabs:
+  - {fileID: 100000, guid: 2128b7c9aea26f6498b6ff9afec0d8ed, type: 2}
+  - {fileID: 100000, guid: 05935cf2648515b4d84bb4c60e1584cd, type: 2}
+  InitialMaxPlatformOffsetY: 1.5
+  InitialMinPlatformOffsetY: -3
+  MaxPlatformOffsetYIncrementPerSec: .0199999996
+  AbsoluteMaxPlatformOffsetY: 4
+  MaxPlatformOffsetY: 2
+  MinPlatformOffsetY: -3
+  MaxPlatformY: 0
+  MinPlatformY: -3
+  MinPlatformDistance: 1
+  MaxPlatformDistance: 2.5
+  MinPlatformLength: 3
+  MaxPlatformLength: 10
+  DistanceBetweenCoins: .100000001
+  CoinHeightFromGround: .300000012
+  MinCoinsOnPlatform: 1
+  BubbleSpawnInterval: 10
+  ObstacleMinOffsetX: 2.5
+  ObstacleStartX: 60
+  GameEndScreen: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

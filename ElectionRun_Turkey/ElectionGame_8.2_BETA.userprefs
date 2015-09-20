@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BillingManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/AddedFuncionallity.cs" Line="14" Column="29" />
+      <File FileName="Assets/Plugins/AdColony.cs" Line="508" Column="2" />
+      <File FileName="Assets/Scripts/BillingManager.cs" Line="65" Column="49" />
+      <File FileName="Assets/Scripts/StoreController.cs" Line="937" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

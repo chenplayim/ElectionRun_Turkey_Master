@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/StartAppData.txt">
+    <Files>
+      <File FileName="../YepiRunner_20.2  _Testting Lag Problems2/Assets/PlatformMove.cs" Line="1" Column="1" />
+      <File FileName="../YepiRunner_20.2  _Testting Lag Problems2/Assets/Scripts/AppManager.cs" Line="1" Column="1" />
+      <File FileName="../YepiRunner_20.2  _Testting Lag Problems2/Assets/Scripts/LevelGenerator.cs" Line="1" Column="1" />
+      <File FileName="../YepiRunner_20.2  _Testting Lag Problems2/Assets/NewGhostController.cs" Line="1" Column="1" />
+      <File FileName="../YepiRunner_20.2  _Testting Lag Problems2/Assets/Scripts/GhostController.cs" Line="1" Column="1" />
+      <File FileName="Assets/StartAppWrapper.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/AdColony.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/Analytics/Analytics.cs" Line="1" Column="1" />
+      <File FileName="Assets/GooglePlayGames/Platforms/PlayGamesClientFactory.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BillingManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LevelGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/StartUpAddsManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/StartAppData.txt" Line="2" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

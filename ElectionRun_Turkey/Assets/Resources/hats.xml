@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hats>
+	<hat name="Wooden Bucket" spriteName="bucket" price="60" prefabName="bucket_head" />
+	<hat name="Opera Mask" spriteName="opera" price="250" prefabName="opera_mask" />
+	<hat name="Red Eye Mask" spriteName="heromask" price="450" prefabName="hero_mask" />
+	<hat name="GigaGlass 9001" spriteName="9k_patch" price="600" prefabName="gigaglass_9k1" />
+	<hat name="Apple Arrow" spriteName="apple" price="800" prefabName="applehead" />
+	<hat name="Flower Pot" spriteName="flower" price="1200" prefabName="flower_pot" />
+	<hat name="Astronaut Helmet" spriteName="space" price="2000" prefabName="space_helmet" />
+	<hat name="Rainbow Hat" spriteName="fun" price="4500" prefabName="fun_hat" />
+	<hat name="Indian" spriteName="indian" price="6000" prefabName="indian" />
+	<hat name="Wing Helmet" spriteName="winged" price="9000" prefabName="winged_helmet" />
+	<hat name="Royal Crown" spriteName="crown" price="50000" prefabName="crown" />
+	<!-- Premium Hats -->
+	<!-- Set premium hats' prices to 0 -->
+	<hat name="Knight Helmet" spriteName="knight" price="0" prefabName="knight_helmet" sku="yepi_knight_helmet" />
+	<hat name="Ice Cream Hat" spriteName="ice_cream" price="0" prefabName="ice_cream" sku="yepi_ice_cream_hat" />
+	<hat name="Purple Bowtie" spriteName="bowtie" price="0" prefabName="bowtie" sku="yepi_purple_bowtie" />
+	<hat name="Pirate Hat" spriteName="pirate" price="0" prefabName="pirate_hat" sku="yepi_pirate_hat" />
+	<hat name="Galaxy Helmet" spriteName="galaxy" price="0" prefabName="galaxy_helm" sku="yepi_galaxy_helmet" />
+	<hat name="Cowboy Hat" spriteName="cowboy" price="0" prefabName="cowboy_hat" sku="yepi_cowboy_hat" />
+	<hat name="Gnome Head" spriteName="gnome" price="0" prefabName="gnome_hat" sku="yepi_gnome_head" />
+	<hat name="Ninja Mask" spriteName="ninja" price="0" prefabName="ninja_mask" sku="yepi_ninja_mask" />
+	<hat name="Zombie Mask" spriteName="zombie" price="0" prefabName="zombie_mask" sku="yepi_zombie_mask" />
+</hats>

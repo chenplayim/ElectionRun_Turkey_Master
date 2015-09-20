@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &113566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 413566}
+  - 114: {fileID: 11413566}
+  m_Layer: 0
+  m_Name: Turkish_Upgrades
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &413566
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11413566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: af82333fdf7894c4180c651d75dbcd2a, type: 2}
+  mSprites:
+  - name: 2
+    x: 0
+    y: 1679
+    width: 666
+    height: 369
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 179
+    paddingRight: 179
+    paddingTop: 71
+    paddingBottom: 72
+  - name: bubulle
+    x: 0
+    y: 1403
+    width: 166
+    height: 166
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 44
+    paddingRight: 46
+    paddingTop: 44
+    paddingBottom: 46
+  - name: dubble-jump
+    x: 1788
+    y: 1715
+    width: 166
+    height: 166
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 44
+    paddingRight: 46
+    paddingTop: 44
+    paddingBottom: 46
+  - name: jump
+    x: 1788
+    y: 1882
+    width: 166
+    height: 166
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 44
+    paddingRight: 46
+    paddingTop: 44
+    paddingBottom: 46
+  - name: line
+    x: 667
+    y: 1698
+    width: 248
+    height: 41
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 42
+    paddingBottom: 45
+  - name: line2
+    x: 316
+    y: 1675
+    width: 1024
+    height: 3
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: minus
+    x: 0
+    y: 1258
+    width: 144
+    height: 144
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 55
+    paddingRight: 57
+    paddingTop: 55
+    paddingBottom: 57
+  - name: Oy-kazan
+    x: 1423
+    y: 1923
+    width: 364
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 74
+    paddingRight: 74
+    paddingTop: 67
+    paddingBottom: 64
+  - name: Oy-kazan-on
+    x: 0
+    y: 1570
+    width: 315
+    height: 108
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 98
+    paddingRight: 99
+    paddingTop: 75
+    paddingBottom: 73
+  - name: oyna
+    x: 667
+    y: 1740
+    width: 359
+    height: 139
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 76
+    paddingRight: 77
+    paddingTop: 58
+    paddingBottom: 59
+  - name: oyna-on
+    x: 1423
+    y: 1800
+    width: 315
+    height: 122
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 98
+    paddingRight: 99
+    paddingTop: 67
+    paddingBottom: 67
+  - name: "Oy-sat\u0131n-al"
+    x: 1027
+    y: 1754
+    width: 364
+    height: 125
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 74
+    paddingRight: 74
+    paddingTop: 67
+    paddingBottom: 64
+  - name: "Oy-sat\u0131n-al-on"
+    x: 1423
+    y: 1686
+    width: 328
+    height: 113
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 92
+    paddingRight: 92
+    paddingTop: 73
+    paddingBottom: 70
+  - name: plus
+    x: 167
+    y: 1425
+    width: 144
+    height: 144
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 55
+    paddingRight: 57
+    paddingTop: 55
+    paddingBottom: 57
+  - name: Titlle
+    x: 667
+    y: 1880
+    width: 755
+    height: 168
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 134
+    paddingRight: 135
+    paddingTop: 44
+    paddingBottom: 44
+  - name: voice
+    x: 1955
+    y: 1973
+    width: 75
+    height: 75
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 26
+    paddingRight: 27
+    paddingTop: 26
+    paddingBottom: 27
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 113566}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

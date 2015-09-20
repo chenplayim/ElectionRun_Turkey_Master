@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ChallengeListController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/CharacterSelectionController.cs" Line="87" Column="29" />
+      <File FileName="Assets/Scripts/ChallengeListController.cs" Line="7" Column="4" />
+      <File FileName="Assets/Scripts/AppManager.cs" Line="596" Column="66" />
+      <File FileName="Assets/NGUI/Examples/Scripts/Other/OpenURLOnClick.cs" Line="5" Column="7" />
+      <File FileName="Assets/Scripts/MainMenuController.cs" Line="301" Column="4" />
+      <File FileName="Assets/Scripts/Config.cs" Line="127" Column="49" />
+      <File FileName="Assets/Scripts/DialogController.cs" Line="40" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

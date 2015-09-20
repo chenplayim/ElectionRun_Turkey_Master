@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Toy Story Runner/ToyStoryRunner/Assets/Scripts/GameOverGUIController.cs">
+    <Files>
+      <File FileName="../Toy Story Runner/ToyStoryRunner/Assets/Scripts/GhostController.cs" Line="136" Column="38" />
+      <File FileName="../Toy Story Runner/ToyStoryRunner/Assets/Scripts/PlayerController.cs" Line="320" Column="36" />
+      <File FileName="../Toy Story Runner/ToyStoryRunner/Assets/Scripts/GameOverGUIController.cs" Line="236" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
