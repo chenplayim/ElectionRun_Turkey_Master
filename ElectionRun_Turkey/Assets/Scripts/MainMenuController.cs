@@ -212,7 +212,7 @@ public class MainMenuController : MonoBehaviour
 	 * 
 	 */
 	#if UNITY_ANDROID
-	public AdColonyCommends adColonyCommends;
+	//public AdColonyCommends adColonyCommends;
 	#endif
 	void Awake()
 	{

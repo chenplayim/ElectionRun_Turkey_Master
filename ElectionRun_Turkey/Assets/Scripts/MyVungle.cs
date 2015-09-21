@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 public class MyVungle : MonoBehaviour {
 
-	public AdColonyCommends adColonyCommends;
+	//public AdColonyCommends adColonyCommends;
 	public GameObject UpgradePanel;
 	
 
@@ -40,7 +40,7 @@ public class MyVungle : MonoBehaviour {
 //			}
 //			if(!VungleAndroid.isVideoAvailable())
 //			{
-				adColonyCommends.TryAdColony();
+				//adColonyCommends.TryAdColony();
 //			}
 		#endif
 

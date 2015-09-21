@@ -511,7 +511,7 @@ public class UpgradeScreenController : MonoBehaviour
 	/**
 	 * 
 	 */
-	public AdColonyCommends AdColonyCommends ;
+	//public AdColonyCommends AdColonyCommends ;
 	public GameObject FacebookPageBTN;
 	public GameObject WatchVideo;
 
@@ -548,7 +548,7 @@ public class UpgradeScreenController : MonoBehaviour
 
 
 			StartAnim.GetComponent<UISpriteAnimation> ().Reset ();
-			AdColonyCommends.ChackIfVideoActive ();
+			//AdColonyCommends.ChackIfVideoActive ();
 
 
 		UpdateGUI();

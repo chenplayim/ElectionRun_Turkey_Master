@@ -43,22 +43,43 @@
     </receiver>
     <service android:name="com.gamethrive.GcmIntentService" />
     <!-- NOTE: You must include these three activity specifications for AdColony. -->
-    <activity android:name="com.jirbo.adcolony.AdColonyOverlay" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+<!--    <activity android:name="com.jirbo.adcolony.AdColonyOverlay" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
     <activity android:name="com.jirbo.adcolony.AdColonyFullscreen" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-    <activity android:name="com.jirbo.adcolony.AdColonyBrowser" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+    <activity android:name="com.jirbo.adcolony.AdColonyBrowser" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />-->
     <!-- Vundel ACTIVITIES -->
-    <activity android:name="com.vungle.publisher.FullScreenAdActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+<!--    <activity android:name="com.vungle.publisher.FullScreenAdActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     <service android:name="com.vungle.publisher.VungleService" android:exported="false" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <activity android:name="com.facebook.unity.FBUnityDialogsActivity" android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
-    </activity>
+    </activity>-->
+    
+       <!-- applovin ACTIVITIES -->
+
+       	 	<activity android:name="com.applovin.adview.AppLovinInterstitialActivity" />
+			<activity android:name="com.applovin.adview.AppLovinConfirmationActivity" />
+        
+                <activity
+            android:name="com.unity3d.player.VideoPlayer"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="YOUR_SDK_KEY" />
+		
+		 <meta-data
+            android:name="applovin.sdk.verbose_logging"
+            android:value="false" />
+<!--        
     <activity android:name="com.startapp.android.publish.list3d.List3DActivity"
     android:hardwareAccelerated="true"
     android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
     <activity android:name="com.startapp.android.publish.AppWallActivity" 
     android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
     android:hardwareAccelerated="true"
-    android:configChanges="orientation|keyboardHidden|screenSize" />	
+    android:configChanges="orientation|keyboardHidden|screenSize" />	-->
   </application>
   <uses-permission android:name="com.android.vending.BILLING" />
   <!---
@@ -82,6 +103,11 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  
+  	<!-- These permissions are strongly recommended and will result in higher performance -->
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	
+	
   <!---
 <uses-permission android:name="com.tmoney.vending.INBILLING" />
 <uses-permission android:name="com.yandex.store.permission.BILLING" />

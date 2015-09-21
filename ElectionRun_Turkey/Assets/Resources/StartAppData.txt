@@ -1,2 +1,0 @@
-developerId=101372542
-applicationId=202184855

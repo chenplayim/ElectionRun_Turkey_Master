@@ -13,7 +13,7 @@ public class MyUnityAds : MonoBehaviour {
 	public static string UnityAdsIOSID = "131626148";
 
 	public static string UnityAdResult;
-	public AdColonyCommends adColonyCommends;
+//	public AdColonyCommends adColonyCommends;
 
 	void Awake() {
 
@@ -86,7 +86,7 @@ public class MyUnityAds : MonoBehaviour {
 	{
 
 		if (UnityAdResult == "Finished") {
-			adColonyCommends.OnAdFinish();
+			//adColonyCommends.OnAdFinish();
 			UnityAdResult = "null";
 
 		}

@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/StartUpAddsManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyHeyzap.cs">
     <Files>
-      <File FileName="Assets/Scripts/MyUnityAds.cs" Line="12" Column="40" />
-      <File FileName="Assets/Scripts/StartUpAddsManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/MyHeyzap.cs" Line="3" Column="3" />
+      <File FileName="Assets/Plugins/HeyzapAds.cs" Line="35" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -11,7 +11,7 @@ PlayerSettings:
   targetResolution: 0
   accelerometerFrequency: 60
   companyName: Playim
-  productName: "\u05E8\u05E6\u05D9\u05DD \u05DC\u05D1\u05D7\u05D9\u05E8\u05D5\u05EA"
+  productName: ElectionRun_Turkey
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 1024
@@ -91,7 +91,7 @@ PlayerSettings:
   uIStatusBarHidden: 1
   uIExitOnSuspend: 0
   uIStatusBarStyle: 0
-  iPhoneSplashScreen: {fileID: 2800000, guid: 251163301c47244458a2d3f00a599a58, type: 3}
+  iPhoneSplashScreen: {fileID: 0}
   iPhoneHighResSplashScreen: {fileID: 2800000, guid: 882754cc6570cdc4c8ab80337f94cad5,
     type: 3}
   iPhoneTallHighResSplashScreen: {fileID: 2800000, guid: 2415b7f95b0726848941eb329beef330,
@@ -119,20 +119,8 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 2800000, guid: 1d78d3fb4666044b7a735a5c77ac5435, type: 3}
+    - m_Icon: {fileID: 2800000, guid: 0b805ce548dd54495a003236863f5dd3, type: 3}
       m_Size: 128
-  - m_BuildTarget: Android
-    m_Icons:
-    - m_Icon: {fileID: 2800000, guid: bc3cafbc34b3549299361cbe191a6bb2, type: 3}
-      m_Size: 144
-    - m_Icon: {fileID: 2800000, guid: 8ed7202f29011429eade4290b6e745a1, type: 3}
-      m_Size: 96
-    - m_Icon: {fileID: 2800000, guid: 1d78d3fb4666044b7a735a5c77ac5435, type: 3}
-      m_Size: 72
-    - m_Icon: {fileID: 2800000, guid: b195518f77f6243aaa8aabb4fc5412d2, type: 3}
-      m_Size: 48
-    - m_Icon: {fileID: 2800000, guid: b195518f77f6243aaa8aabb4fc5412d2, type: 3}
-      m_Size: 36
   - m_BuildTarget: Standalone
     m_Icons:
     - m_Icon: {fileID: 2800000, guid: 433a456fdfb48c140bb27b3db9bfdcf3, type: 3}
