@@ -177,6 +177,7 @@ public class GameOverGUIController : MonoBehaviour {
 	public bool DidChallengeAFriend;
 	public bool DidChackedUpgrades;
 
+	public UILabel XPStatusLabel;
 
 	void OnEnable()
 	{
@@ -196,6 +197,11 @@ public class GameOverGUIController : MonoBehaviour {
 		tween.from = audioSource.volume;
 		tween.to = AppManager.defaultMusicVolume * 0.5f;
 		tween.PlayForward();
+
+
+		string XPStatus = PlayerPrefs.GetString ("PlayersXPStatus");
+		XPStatusLabel.text = XPStatus;
+
 
 		//my change Web
 		#if UNITY_WEBPLAYER
@@ -326,7 +332,7 @@ public class GameOverGUIController : MonoBehaviour {
 
 	}
 
-	public StartUpAddsManager startUpAddsManager;
+	//public StartUpAddsManager startUpAddsManager;
 	//
 	//
 	//

@@ -38,8 +38,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .839999974, y: 1.00999999}
-  m_Center: {x: -.0700000003, y: .469999999}
+  m_Size: {x: 1.50999999, y: 1.37}
+  m_Center: {x: -.00999999978, y: .620000005}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -60,7 +60,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 2874371975
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5f67d8eb72c2740ff9c8cad2ae0a48cc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 53e89b57ae1224bf1bf9119647d09027, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

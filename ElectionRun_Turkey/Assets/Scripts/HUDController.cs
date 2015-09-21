@@ -350,88 +350,88 @@ public class HUDController : MonoBehaviour {
 	{
 
 			
-		if (playerController.MetersRun < 100 && playerController.MetersRun > 0 && (PlayersXPStatus == "דקפתמ")) 
+		if (playerController.MetersRun < 100 && playerController.MetersRun > 0 && (PlayersXPStatus == "Yeni koltuk" )) 
 		{
 			XPValue = (playerController.MetersRun ) /100;
 			XPSlide.value = XPValue;
 			widget.color = Color.yellow;
 		}
-		if (playerController.MetersRun < 200 && playerController.MetersRun > 0 && (PlayersXPStatus == "הגלפמ רבח")) 
+		if (playerController.MetersRun < 200 && playerController.MetersRun > 0 && (PlayersXPStatus == "Yükselen yıldız" )) 
 		{
 			XPValue = (playerController.MetersRun) /200;
 			XPSlide.value = XPValue;
 			widget.color = Color.blue;
 		}
-		if (playerController.MetersRun < 350 && playerController.MetersRun > 0 && (PlayersXPStatus == "טסיבול")) 
+		if (playerController.MetersRun < 350 && playerController.MetersRun > 0 && (PlayersXPStatus == "Meteor")) 
 		{
 			XPValue = (playerController.MetersRun) /350;
 			XPSlide.value = XPValue;
 			widget.color = Color.red;
 		}
-		if (playerController.MetersRun < 500 && playerController.MetersRun > 0 && (PlayersXPStatus == "הלוע בכוכ")) 
+		if (playerController.MetersRun < 500 && playerController.MetersRun > 0 && (PlayersXPStatus == "Lobici" )) 
 		{
 			XPValue = (playerController.MetersRun ) /500;
 			XPSlide.value = XPValue;
 			widget.color = Color.cyan;
 	
 		}
-		if (playerController.MetersRun < 700 && playerController.MetersRun > 0 && (PlayersXPStatus == "רואטמ")) 
+		if (playerController.MetersRun < 700 && playerController.MetersRun > 0 && (PlayersXPStatus == "Yeni üye")) 
 		{
 			XPValue = (playerController.MetersRun) /700;
 			XPSlide.value = XPValue;
 			widget.color = Color.magenta;
 		}
-		if (playerController.MetersRun < 900 && playerController.MetersRun > 0 && (PlayersXPStatus == "שדנד כ״ח")) 
+		if (playerController.MetersRun < 900 && playerController.MetersRun > 0 && (PlayersXPStatus == "Parti üyesi")) 
 		{
 			XPValue = (playerController.MetersRun) /900;
 			XPSlide.value = XPValue;
 			widget.color = new Color(0.23921568627450980392156862745098f,0.85882352941176470588235294117647f,0.93333333333333333333333333333333f,1f);
 		}
-		if (playerController.MetersRun < 1150 && playerController.MetersRun > 0 && (PlayersXPStatus == "לפלופמ כ״ח")) 
+		if (playerController.MetersRun < 1150 && playerController.MetersRun > 0 && (PlayersXPStatus == "Başbakan")) 
 		{
 			XPValue = (playerController.MetersRun ) /1150;
 			XPSlide.value = XPValue;
 			widget.color = new Color(0.43529411764705882352941176470588f,0.23921568627450980392156862745098f,0.93333333333333333333333333333333f,1f);
 			
 		}
-		if (playerController.MetersRun < 1400 && playerController.MetersRun > 0 && (PlayersXPStatus == "אסיכל דומצ")) 
-		{
-			XPValue = (playerController.MetersRun) /1400;
-			XPSlide.value = XPValue;
-			widget.color = new Color (0.18431372549019607843137254901961f,0.88627450980392156862745098039216f,0.49803921568627450980392156862745f,1f);
-		}
-		if (playerController.MetersRun < 1700 && playerController.MetersRun > 0 && (PlayersXPStatus == "!הנפתמ אל")) 
-		{
-			XPValue = (playerController.MetersRun) /1700;
-			XPSlide.value = XPValue;
-			widget.color = new Color (0.94901960784313725490196078431373f,0.67843137254901960784313725490196f,0.10196078431372549019607843137255f,1f);
-		}
-		if (playerController.MetersRun < 2000 && playerController.MetersRun > 0 && (PlayersXPStatus == "סרפ ןועמש")) 
-		{
-			XPValue = (playerController.MetersRun ) /2000;
-			XPSlide.value = XPValue;
-			widget.color =  new Color(0.69411764705882352941176470588235f,0.93333333333333333333333333333333f,0.23921568627450980392156862745098f,1f);
-			
-		}
-		if (playerController.MetersRun < 2400 && playerController.MetersRun > 0 && (PlayersXPStatus == "Master")) 
-		{
-			XPValue = (playerController.MetersRun) /2400;
-			XPSlide.value = XPValue;
-			widget.color = new Color(0.94509803921568627450980392156863f,0.25098039215686274509803921568627f,0.93725490196078431372549019607843f,1f);
-		}
-		if (playerController.MetersRun < 2900 && playerController.MetersRun > 0 && (PlayersXPStatus == "Running God")) 
-		{
-			XPValue = (playerController.MetersRun) /2900;
-			XPSlide.value = XPValue;
-			widget.color = new Color(1f,0.47450980392156862745098039215686f,0.25882352941176470588235294117647f,1f);
-		}
-		if (playerController.MetersRun < 3500 && playerController.MetersRun > 0 && (PlayersXPStatus == "Master of Universe")) 
-		{
-			XPValue = (playerController.MetersRun) /3500;
-			XPSlide.value = XPValue;
-			widget.color = new Color(0.83529411764705882352941176470588f,0.62352941176470588235294117647059f,0.05882352941176470588235294117647f,1f);
-		}
-
+//		if (playerController.MetersRun < 1400 && playerController.MetersRun > 0 && (PlayersXPStatus == "אסיכל דומצ")) 
+//		{
+//			XPValue = (playerController.MetersRun) /1400;
+//			XPSlide.value = XPValue;
+//			widget.color = new Color (0.18431372549019607843137254901961f,0.88627450980392156862745098039216f,0.49803921568627450980392156862745f,1f);
+//		}
+//		if (playerController.MetersRun < 1700 && playerController.MetersRun > 0 && (PlayersXPStatus == "!הנפתמ אל")) 
+//		{
+//			XPValue = (playerController.MetersRun) /1700;
+//			XPSlide.value = XPValue;
+//			widget.color = new Color (0.94901960784313725490196078431373f,0.67843137254901960784313725490196f,0.10196078431372549019607843137255f,1f);
+//		}
+//		if (playerController.MetersRun < 2000 && playerController.MetersRun > 0 && (PlayersXPStatus == "סרפ ןועמש")) 
+//		{
+//			XPValue = (playerController.MetersRun ) /2000;
+//			XPSlide.value = XPValue;
+//			widget.color =  new Color(0.69411764705882352941176470588235f,0.93333333333333333333333333333333f,0.23921568627450980392156862745098f,1f);
+//			
+//		}
+//		if (playerController.MetersRun < 2400 && playerController.MetersRun > 0 && (PlayersXPStatus == "Master")) 
+//		{
+//			XPValue = (playerController.MetersRun) /2400;
+//			XPSlide.value = XPValue;
+//			widget.color = new Color(0.94509803921568627450980392156863f,0.25098039215686274509803921568627f,0.93725490196078431372549019607843f,1f);
+//		}
+//		if (playerController.MetersRun < 2900 && playerController.MetersRun > 0 && (PlayersXPStatus == "Running God")) 
+//		{
+//			XPValue = (playerController.MetersRun) /2900;
+//			XPSlide.value = XPValue;
+//			widget.color = new Color(1f,0.47450980392156862745098039215686f,0.25882352941176470588235294117647f,1f);
+//		}
+//		if (playerController.MetersRun < 3500 && playerController.MetersRun > 0 && (PlayersXPStatus == "Master of Universe")) 
+//		{
+//			XPValue = (playerController.MetersRun) /3500;
+//			XPSlide.value = XPValue;
+//			widget.color = new Color(0.83529411764705882352941176470588f,0.62352941176470588235294117647059f,0.05882352941176470588235294117647f,1f);
+//		}
+//
 
 	}
 
@@ -441,72 +441,72 @@ public class HUDController : MonoBehaviour {
 		float mBestScore = BestScore;
 		
 		if (mBestScore < 50 && mBestScore > 0) {
-			XPLabel.text = "דקפתמ";
+			XPLabel.text = "Yeni koltuk";
 			NextBestScore = 100f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 100f);
 		}
 		if (mBestScore < 100 && mBestScore > 50) {
-			XPLabel.text = "הגלפמ רבח";
+			XPLabel.text = "Yükselen yıldız";
 			NextBestScore = 200f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 200f);
 		}
 		if (mBestScore < 200 && mBestScore > 100) {
-			XPLabel.text = "טסיבול";
+			XPLabel.text = "Meteor";
 			NextBestScore = 350f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 350f);
 		}
 		if (mBestScore < 350 && mBestScore > 200) {
-			XPLabel.text = "הלוע בכוכ";
+			XPLabel.text = "Lobici";
 			NextBestScore = 500f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 500f);
 		}
 		if (mBestScore < 500 && mBestScore > 350) {
-			XPLabel.text = "רואטמ";
+			XPLabel.text = "Yeni üye";
 			NextBestScore = 700f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 700f);
 		}
 		if (mBestScore < 700 && mBestScore > 500) {
-			XPLabel.text = "שדנד כ״ח";
+			XPLabel.text = "Parti üyesi";
 			NextBestScore = 900f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 900f);
 		}
 		if (mBestScore < 900 && mBestScore > 700) {
-			XPLabel.text = "לפלופמ כ״ח";
+			XPLabel.text = "Başbakan";
 			NextBestScore = 1150f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 1150f);
 		}
 		if (mBestScore < 1150 && mBestScore > 900) {
-			XPLabel.text = "אסיכל דומצ";
+			//XPLabel.text = "אסיכל דומצ";
 			NextBestScore = 1400f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 1400f);
 		}
 		if (mBestScore < 1400 && mBestScore > 1150) {
-			XPLabel.text = "!הנפתמ אל";
+			//XPLabel.text = "!הנפתמ אל";
 			NextBestScore = 1700f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 1700f);
 		}
 		if (mBestScore < 1700 && mBestScore > 1400) {
-			XPLabel.text = "סרפ ןועמש";
+			//XPLabel.text = "סרפ ןועמש";
 			NextBestScore = 2000f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 2000f);
 		}
 		if (mBestScore < 2000 && mBestScore > 1700) {
-			XPLabel.text = "Experienced";
+			//XPLabel.text = "Experienced";
 			NextBestScore = 2400f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 2400f);
 		}
 		if (mBestScore < 2400 && mBestScore > 2000) {
-			XPLabel.text = "Master";
+			//XPLabel.text = "Master";
 			NextBestScore = 2900f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 2900f);
 		}
 		if (mBestScore < 2900 && mBestScore > 2400) {
-			XPLabel.text = "Running God";
+			//XPLabel.text = "Running God";
 			NextBestScore = 3500f;
 			//PlayerPrefs.SetFloat("NextBestScore" , 3500f);
 		}
 		if (mBestScore < 3500 && mBestScore > 2900) {
-			XPLabel.text = "Master of Universe";
+			//XPLabel.text = "Master of Universe";
 			NextBestScore = 3500;
 			//PlayerPrefs.SetFloat("NextBestScore" , 200f);
 		}

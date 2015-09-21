@@ -60,7 +60,6 @@ GameObject:
   - 4: {fileID: 400006}
   - 212: {fileID: 21200004}
   - 95: {fileID: 9500004}
-  - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: BubbleShield
@@ -144,8 +143,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.27466202, y: -2.86999989, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -7.36000013, y: -1.88999999, z: 0}
+  m_LocalScale: {x: .800000012, y: .800000012, z: .800000012}
   m_Children:
   - {fileID: 400004}
   - {fileID: 400002}
@@ -178,7 +177,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 1e4c164c29437494eb141c376544ba7f, type: 2}
   m_IsTrigger: 0
   m_Size: {x: .50999999, y: .839999974}
-  m_Center: {x: -.209999993, y: -.629999995}
+  m_Center: {x: -.209999993, y: -.720000029}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -233,7 +232,7 @@ Animator:
   m_GameObject: {fileID: 100008}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a2678ba3f21ce42419f955d34e87699a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 381576a720d0f42cc89619f83f3ebf65, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -250,23 +249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4563e259df59ac14ca3abf98b7dc8a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04223c26bc52ffa4d9fa3a589ec4646a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpriteName: bubulle
-  AnimationControllerName: bubbleShield
-  DisableSwapping: 0
-  defaultSprite: {fileID: 21300000, guid: 0a347fd3aad139b4f87993f38ebe4827, type: 3}
-  defaultAnimatorController: {fileID: 9100000, guid: 6acde46a16842fe4298913246c711828,
-    type: 2}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -290,8 +272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AccelerationPerSec: .100000001
-  BackgroundNightColor: {r: .912305415, g: .737997413, b: .95588237, a: 1}
-  BackgroundEveningColor: {r: 1, g: .716262996, b: .716262996, a: 1}
+  BackgroundNightColor: {r: .586635053, g: .0214100536, b: .727941155, a: 1}
+  BackgroundEveningColor: {r: .95588237, g: .653654873, b: .653654873, a: 1}
   DayLength: 40
   curTime: 0
   MinJumpHeight: .5
@@ -305,15 +287,32 @@ MonoBehaviour:
   GravityScaleOnDead: .5
   ForceOnDeath: {x: -3, y: 4}
   CameraXOffset: 5
-  jumpClip: {fileID: 8300000, guid: 88f729ab0f5017a48a38374d64311282, type: 3}
-  altJumpClip: {fileID: 8300000, guid: 0099abcccff77a648b0a8e98388b3b24, type: 3}
+  jumpClip: {fileID: 8300000, guid: 2ab41df7af9fe418191bd9d44b24b928, type: 3}
+  altJumpClip: {fileID: 8300000, guid: 2ab41df7af9fe418191bd9d44b24b928, type: 3}
   coinClip: {fileID: 8300000, guid: b65f1a3fab16d2f43a3f1e23895d27a4, type: 3}
   dropClip: {fileID: 8300000, guid: 0fd10e8f5484e8145adf88dd54ad092b, type: 3}
   deathClip: {fileID: 8300000, guid: 49afc3d610b73984c9f34770c795097a, type: 3}
   bubblePopClip: {fileID: 8300000, guid: b42d25ffbcf3bea4e9ece474169b9afc, type: 3}
   powerupClip: {fileID: 8300000, guid: 9c0fbd54a2325544f90dc4c82e052f11, type: 3}
-  NameInputGUI: {fileID: 0}
   ScreenFlash: {fileID: 0}
+  ahmetAudio:
+  - {fileID: 8300000, guid: bfb16dfd768244bdca401e75c36712a2, type: 3}
+  cemAudio:
+  - {fileID: 8300000, guid: 71bc8bae5363a4e8384c9165915bfedd, type: 3}
+  devletAudio:
+  - {fileID: 8300000, guid: 3643ccaf1fe3a4666bb057d881be3a3e, type: 3}
+  doguAudio:
+  - {fileID: 8300000, guid: b719825aaf86b48fc823fcec32268047, type: 3}
+  emineAudio:
+  - {fileID: 8300000, guid: e37c841ee7a994b9b9f0e256069db878, type: 3}
+  floatingAudio:
+  - {fileID: 8300000, guid: 6e388a83b076545a899d25758ad800f6, type: 3}
+  kemalAudio:
+  - {fileID: 8300000, guid: f5f746a7cee944c22b1084e5bb050736, type: 3}
+  mustafaAudio:
+  - {fileID: 8300000, guid: ad22d575381ee4fdfae1471090756352, type: 3}
+  selahattinAudio:
+  - {fileID: 8300000, guid: 1fbbc125d54884208985c4accc60a9d2, type: 3}
   hUDController: {fileID: 0}
   addedFuncionallity: {fileID: 0}
   TimesToShowVideoinADay: 0
@@ -361,7 +360,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 2235990303
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: c8567819aec4b4ec5b174f98246dbf74, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 931b52ca4968d4fa8adce1a24ddf9483, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200004
 SpriteRenderer:
@@ -405,7 +404,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 2235990303
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 8140590a546f04d12abda392ae032e2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f340ea541e5e244f28fe4d6fe37808ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
