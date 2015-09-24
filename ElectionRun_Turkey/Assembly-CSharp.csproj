@@ -155,6 +155,9 @@
      <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowAutoYaw.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowDragTilt.cs" />
      <Compile Include="Assets\OpenIAB-demo\OpenIABTest.cs" />
+     <Compile Include="Assets\Scripts\AdColonyAdManager\ADCAdManager.cs" />
+     <Compile Include="Assets\Scripts\AdColonyAdManager\ADCVideoZone.cs" />
+     <Compile Include="Assets\Scripts\AdColonyAdManager\ADCVideoZoneType.cs" />
      <Compile Include="Assets\Scripts\AddedFuncionallity.cs" />
      <Compile Include="Assets\Scripts\AppManager.cs" />
      <Compile Include="Assets\Scripts\BillingManager.cs" />
@@ -227,6 +230,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sr\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\common_colors.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\values-he\strings.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest_AdColony.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\admob_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rHK\common_strings.xml" />

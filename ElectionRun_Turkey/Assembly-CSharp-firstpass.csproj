@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugins\AdColony.cs" />
      <Compile Include="Assets\Plugins\Analytics\Analytics.cs" />
      <Compile Include="Assets\Plugins\Analytics\GoogleUniversalAnalytics.cs" />
      <Compile Include="Assets\Plugins\Analytics\Platform-WindowsStore\File.cs" />
@@ -244,6 +245,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sr\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\common_colors.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\values-he\strings.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest_AdColony.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\admob_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rHK\common_strings.xml" />
