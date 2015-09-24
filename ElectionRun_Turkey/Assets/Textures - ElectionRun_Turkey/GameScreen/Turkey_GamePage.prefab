@@ -42,8 +42,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: f1e708dfeab374ac98d61484d1a54f98, type: 2}
   mSprites:
   - name: flag-icon
-    x: 0
-    y: 272
+    x: 80
+    y: 396
     width: 62
     height: 80
     borderLeft: 0
@@ -55,8 +55,8 @@ MonoBehaviour:
     paddingTop: 22
     paddingBottom: 26
   - name: Rounded-Rectangle-1
-    x: 63
-    y: 336
+    x: 341
+    y: 496
     width: 168
     height: 16
     borderLeft: 0
@@ -67,9 +67,22 @@ MonoBehaviour:
     paddingRight: 44
     paddingTop: 56
     paddingBottom: 56
+  - name: Rounded-Rectangle-2
+    x: 0
+    y: 477
+    width: 340
+    height: 35
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 86
+    paddingRight: 86
+    paddingTop: 110
+    paddingBottom: 111
   - name: settings-BTN
     x: 0
-    y: 430
+    y: 394
     width: 79
     height: 82
     borderLeft: 0
@@ -81,8 +94,8 @@ MonoBehaviour:
     paddingTop: 25
     paddingBottom: 21
   - name: settings-BTN-on
-    x: 77
-    y: 357
+    x: 0
+    y: 78
     width: 69
     height: 72
     borderLeft: 0
@@ -94,8 +107,8 @@ MonoBehaviour:
     paddingTop: 30
     paddingBottom: 26
   - name: sound-off
-    x: 80
-    y: 430
+    x: 0
+    y: 311
     width: 79
     height: 82
     borderLeft: 0
@@ -107,8 +120,8 @@ MonoBehaviour:
     paddingTop: 25
     paddingBottom: 21
   - name: sound-on
-    x: 160
-    y: 430
+    x: 0
+    y: 228
     width: 79
     height: 82
     borderLeft: 0
@@ -121,7 +134,7 @@ MonoBehaviour:
     paddingBottom: 21
   - name: UI evet-icon
     x: 0
-    y: 353
+    y: 151
     width: 76
     height: 76
     borderLeft: 0

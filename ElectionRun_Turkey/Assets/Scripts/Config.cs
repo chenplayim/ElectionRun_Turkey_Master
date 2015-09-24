@@ -10,8 +10,8 @@ public class Config : MonoBehaviour
 	/**
 	 * 
 	 */
-	public enum Characters : int
-	{
+//	public enum Characters : int
+//	{
 		//"ahmet","cem","devlet","dogu","emine","floating","kemal","mustafa","selahattin"
 //
 //		ahmet = 0,
@@ -23,7 +23,7 @@ public class Config : MonoBehaviour
 //		kemal = 6,
 //		mustafa = 7,
 //		selahattin = 8
-	}
+//	}
 
 	/**
 	 * 
