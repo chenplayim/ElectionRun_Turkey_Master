@@ -663,12 +663,20 @@ public class PlayerController : MonoBehaviour
 	public GameOverGUIController gameOverGUIController;
 
 
+	public int TimesDied = 0;
+
 	void Die ()
 	{
 
+		TimesDied ++;
+		print (TimesDied);
+		if (TimesDied == 3)
+		{
+			MyHeyzap.instence.ShowInterstitialAd();
+			TimesDied = 0;
+		}
+		
 
-		//my change
-		//GhostManager.KillAllGhosts ();
 
 		hUDController.WhenDie();
 
@@ -695,13 +703,7 @@ public class PlayerController : MonoBehaviour
 			mPlayerMarker.SetActive(false);
 			mAnimator.Play("dead");
 
-
-
 			AudioSource.PlayClipAtPoint(ChosenSound,transform.position);
-
-
-
-
 
 			this.enabled = false;
 			gameObject.collider2D.enabled = false;

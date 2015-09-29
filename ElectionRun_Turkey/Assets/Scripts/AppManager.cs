@@ -111,36 +111,7 @@ public class AppManager : MonoBehaviour
 	UIGrid mChallengerGrid;
 	List<GameObject> mChallengerEntries;
 
-	//
-	//
-	//
-	#if (UNITY_ANDROID || UNITY_IPHONE) && !UNITY_EDITOR
 
-	BannerView mBannerAd;
-	InterstitialAd mInterstitialAd;
-	bool mInterstitialAdLoaded = false;
-	bool mInterstitialAdFailed = false;
-	bool mInterstitialAdOpened = false;
-
-	public static bool InterstitialAdLoaded {
-		get {
-			return mInstance.mInterstitialAdLoaded;
-		}
-	}
-
-	public static bool InterstitialAdOpened {
-		get {
-			return mInstance.mInterstitialAdOpened;
-		}
-	}
-
-	public static bool InterstitialAdFailed {
-		get {
-			return mInstance.mInterstitialAdFailed;
-		}
-	}
-
-	#endif
 
 	public static AppManager instance {
 		get {
@@ -148,45 +119,6 @@ public class AppManager : MonoBehaviour
 		}
 	}
 
-	/**
-	 * 
-	 */
-	public static void ShowBannerAd()
-	{
-		#if (UNITY_ANDROID || UNITY_IPHONE) && !HIDE_AD && !UNITY_EDITOR
-
-		if (mInstance.mBannerAd != null) mInstance.mBannerAd.Show();
-
-		#endif
-	}
-	
-	/**
-	 * 
-	 */
-	public static void HideBannerAd()
-	{
-		#if (UNITY_ANDROID || UNITY_IPHONE) && !HIDE_AD && !UNITY_EDITOR
-
-		if (mInstance.mBannerAd != null) mInstance.mBannerAd.Hide();
-
-		#endif
-	}
-
-	/**
-	 * 
-	 */
-//	public static void ShowInterstitialAd()
-//	{
-//		#if (UNITY_ANDROID || UNITY_IPHONE) && !HIDE_AD
-//
-//		mInstance.DoShowInsterstitialAd();
-//
-//		#endif
-//	}
-
-	//
-	//
-	//
 	public static bool enableSound
 	{
 		set {
@@ -869,47 +801,6 @@ public class AppManager : MonoBehaviour
 
 	public GameOverGUIController gameOverGUIController;
 	public AddedFuncionallity addedFuncionallity;
-	public int InterstitialAdCounter;
-
-	void Start()
-	{
-			
-				InterstitialAdCounter = 0;	
-	}
-
-
-	public void DoShowInsterstitialAd()
-	{
-		#if (UNITY_ANDROID || UNITY_IPHONE) && !UNITY_EDITOR && !HIDE_AD
-		if (mInterstitialAd == null)
-		{
-			mInterstitialAdLoaded = false;
-			mInterstitialAdFailed = false;
-			mInterstitialAdOpened = false;
-
-			// Initialize an InterstitialAd.
-			mInterstitialAd = new InterstitialAd(INTERSTITIAL_AD_ID);
-			// Create an empty ad request.
-			AdRequest request = new AdRequest.Builder().Build();
-			// Load the interstitial with the request.
-			mInterstitialAd.LoadAd(request);
-			
-			mInterstitialAd.AdLoaded += OnInterstitialLoaded;
-			mInterstitialAd.AdFailedToLoad += OnInterstitialFailedToLoad;
-			mInterstitialAd.AdClosed += OnInterstitialClosed;
-			mInterstitialAd.AdOpened += OnInterstitialOpened;
-
-			gameOverGUIController.EnableGUI(true);
-		}
-		else
-		{
-			if(mInterstitialAdLoaded) mInterstitialAd.Show();
-			InterstitialAdCounter = 0 ;
-			gameOverGUIController.EnableGUI(true);
-		}
-
-		#endif
-	}
 
 	#if (UNITY_ANDROID)
 	void OnAuthenticateGooglePlayResult(bool success)
@@ -936,38 +827,5 @@ public class AppManager : MonoBehaviour
 	}
 	#endif
 
-	/**
-	 * 
-	 */
-	#if (UNITY_ANDROID || UNITY_IPHONE) && !UNITY_EDITOR
-	void OnInterstitialLoaded(object sender, EventArgs args)
-	{
-		Debug.Log("AppManager - Interstitial loaded");
-		mInterstitialAdLoaded = true;
-		//mInterstitialAd.Show();
-	}
 
-	void OnInterstitialFailedToLoad(object sender, AdFailedToLoadEventArgs args)
-	{
-		Debug.Log("AppManager - Interstitial failed to load");
-		mInterstitialAdFailed = true;
-		mInterstitialAd.Destroy();
-		mInterstitialAd = null;
-	}
-
-	void OnInterstitialClosed(object sender, EventArgs args)
-	{
-		Debug.Log("AppManager - Interstitial closed");
-		mInterstitialAd.Destroy();
-		mInterstitialAd = null;
-		mInterstitialAdOpened = false;
-		mInterstitialAdLoaded = false;
-		DoShowInsterstitialAd();
-	}
-
-	void OnInterstitialOpened(object sender, EventArgs args)
-	{
-		mInterstitialAdOpened = true;
-	}
-	#endif
 }

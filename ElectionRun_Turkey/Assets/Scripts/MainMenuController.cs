@@ -25,6 +25,8 @@ public class MainMenuController : MonoBehaviour
 	UIButton mMuteButton;
 	UIButton mSoundOnButton;
 
+	public static MainMenuController instence;
+
 	//
 	//
 	//
@@ -60,7 +62,6 @@ public class MainMenuController : MonoBehaviour
 		FacebookManager.instance.Login();
 		Debug.Log (FacebookManager.instance.name + FacebookManager.instance.appRequestResult);
 		Config.instance.PlayerName = FacebookManager.instance.name;
-		//Debug.Log (FacebookManager.instance.name);
 	}
 
 	/**
@@ -189,11 +190,7 @@ public class MainMenuController : MonoBehaviour
 	//
 	void OnFirstCharacterSelectFinished(CharacterSelectionController sender) {
 		sender.Closed -= OnFirstCharacterSelectFinished;
-//
-//		// Show tutorial dialog
-//		GameObject go = transform.parent.FindChild("Tutorial").gameObject;
-//		go.SetActive(true);
-//		go.GetComponent<TouchToClose>().Closed += OnTutorialClosed;
+
 
 		// Update camera
 		LevelGenerator.playerController.UpdateCamera();
@@ -216,6 +213,8 @@ public class MainMenuController : MonoBehaviour
 	#endif
 	void Awake()
 	{
+
+		instence = this;
 
 		AppManager.instance.challengeActivated += OnChallengeActivated;
 		Transform transf = transform;
@@ -301,6 +300,8 @@ public class MainMenuController : MonoBehaviour
 
 	public GameObject DialogControllerOBG;
 	public GameObject ChallengeListControllerOBG;
+	//int TimeToShowInterstisialOnQuit;
+
 
 	void Update()
 	{
@@ -308,11 +309,21 @@ public class MainMenuController : MonoBehaviour
 		#if !UNITY_WEBPLAYER
 		if (Input.GetKeyDown(KeyCode.Escape)  && DialogController.IsConfermationOpen == false && ChallengeListController.challengeListOpen == false)
 		{
+
+			//TimeToShowInterstisialOnQuit = System.DateTime.Now.Day;
+			//print (TimeToShowInterstisialOnQuit);
+//
+//			if (System.DateTime.Now.Hour > PlayerPrefs.GetInt("TimeToShowInterstisialOnQuit"))
+//			{
+				MyHeyzap.instence.ShowInterstitialAd();
+			//	PlayerPrefs.SetInt("TimeToShowInterstisialOnQuit" , System.DateTime.Now.Day);
+			//}
+
 			// Confirm game quit
 			GameObject go = transform.parent.FindChild("ConfirmationDialog").gameObject;
 			DialogController dlgControl = go.GetComponent<DialogController>();
 			dlgControl.Closed += OnConfirmExit;
-			dlgControl.SetMessage("?בוזעל ךנוצרב םאה");
+			dlgControl.SetMessage("Are you sure you want to leave?");
 			go.SetActive(true);
 			//StartCoroutine(WaitForSecond());
 		}
@@ -363,7 +374,7 @@ public class MainMenuController : MonoBehaviour
 
 		GameObject go = transform.parent.FindChild("DialogYouWon").gameObject;
 
-		SetMessage.text =  "תולוק " + CoinsWon + "ב תיכז";
+		SetMessage.text = CoinsWon + " oy aldın!";
 		go.SetActive(true);
 		StarsEffect.SetActive (true);
 		Config.instance.Coins += CoinsWon;

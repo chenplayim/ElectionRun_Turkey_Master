@@ -335,17 +335,13 @@ public class UpgradeScreenController : MonoBehaviour
 		gameObject.SetActive(false);
 		mGameData.Save();
 		Closed(this, EventArgs.Empty);
-		AppManager.ShowBannerAd ();
 	}
 
 	public void OnClickExitToReplay()
 	{
 		gameObject.SetActive(false);
 		mGameData.Save();
-		//GameEndScreen.GetComponent<GameOverGUIController>().CanShowPopUps = false;
 	    Closed(this, EventArgs.Empty);
-		//GameEndScreen.SetActive (false);
-		//AppManager.ShowBannerAd ();
 	}
 
 
@@ -524,6 +520,14 @@ public class UpgradeScreenController : MonoBehaviour
 
 	void OnEnable()
 	{
+
+		// Later, such as after a level is completed
+		if (HZVideoAd.isAvailable()) {
+			WatchVideo.SetActive(true);
+			print("Videos are now activaded");
+		}
+
+
 
 		if (PlayerPrefs.GetInt ("FacebookPageShow") == 0 && WatchVideo.activeSelf == false) {
 			

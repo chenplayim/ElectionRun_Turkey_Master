@@ -232,14 +232,14 @@ public class AddedFuncionallity : MonoBehaviour {
 	public GameObject HudPanel;
 	public bool paused;
 	public PauseMenuController pauseMenuController;
-	
-	void OnApplicationPause(bool pauseStatus) {
-		
-		if (HudPanel.activeSelf == true) 
-		{
-				pauseMenuController.OpenPauseMenu ();
-		}
-	}
+//	
+//	void OnApplicationPause(bool pauseStatus) {
+//		
+//		if (HudPanel.activeSelf == true) 
+//		{
+//				pauseMenuController.OpenPauseMenu ();
+//		}
+//	}
 
 
 

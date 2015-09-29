@@ -179,6 +179,8 @@ public class GameOverGUIController : MonoBehaviour {
 
 	public UILabel XPStatusLabel;
 
+
+
 	void OnEnable()
 	{
 
@@ -305,10 +307,10 @@ public class GameOverGUIController : MonoBehaviour {
 
 			EnableGUI(true);
 
-			if (AppManager.instance.InterstitialAdCounter != 4)
-			{
-				AppManager.instance.InterstitialAdCounter ++;
-			}
+//			if (AppManager.instance.InterstitialAdCounter != 4)
+//			{
+//				AppManager.instance.InterstitialAdCounter ++;
+//			}
 
 
 			addedFuncionallity.PopUpsDialogCon();
@@ -360,18 +362,6 @@ public class GameOverGUIController : MonoBehaviour {
 
 	public void EndGame()
 	{
-
-
-		#if (UNITY_ANDROID || UNITY_IPHONE) && !UNITY_EDITOR && !HIDE_AD
-		
-		if (AppManager.instance.InterstitialAdCounter == 4 && (PlayerPrefs.GetInt("DialogPopUp") > 3 ))
-		{
-			EnableGUI(false);
-			AppManager.instance.DoShowInsterstitialAd();
-		}
-		
-		#endif
-
 		#if UNITY_IPHONE
 		if (Social.localUser.authenticated) {
 			
@@ -419,21 +409,11 @@ public class GameOverGUIController : MonoBehaviour {
 				mMetersTweenScale.enabled = false;
 				mMetersTweenScale.transform.localScale = Vector3.one;
 
-				// "And Collected"
-				//TweenScale tween = TweenScale.Begin(mCoinsPrompt.gameObject, 0.2f, new Vector3(1.3f, 1.3f, 1));
-				//tween.method = UITweener.Method.EaseOut;
-				//EventDelegate.Add(tween.onFinished, OnScaleupTweenFinished);
-
 				// Coins pulsing
 				mCoinsTweenScale = TweenScale.Begin(mCoinsLabel.gameObject, 0.15f, new Vector3(1.2f, 1.2f, 1));
 				mCoinsTweenScale.style = UITweener.Style.PingPong;
 
-//				if(MetersRun > minDistance)
-//				{
-//					ChallangeAFriendAnimator.enabled = true;
-//					transform.Find("Starsplode_Distance").gameObject.SetActive(true);
-//				}
-			
+
 			}
 		}
 		else if (mState == 1)
@@ -467,13 +447,7 @@ public class GameOverGUIController : MonoBehaviour {
 					ChallangeAFriendAnimator.enabled = true;
 				}
 
-
-				//if(CoinsCollected > minCoinCollected) transform.Find("Starsplode_Coin").gameObject.SetActive(true);
-
-				if (AppManager.instance.InterstitialAdCounter != 4)
-				{
-					AppManager.instance.InterstitialAdCounter ++;
-				}
+			
 				EndGame();
 
 			//	addedFuncionallity.PopUpsDialogCon();

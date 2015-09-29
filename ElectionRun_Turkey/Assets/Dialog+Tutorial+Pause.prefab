@@ -42,8 +42,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 46704113b46f24e35b5f9437d84c1ff8, type: 2}
   mSprites:
   - name: 1
-    x: 903
-    y: 1821
+    x: 791
+    y: 1778
     width: 111
     height: 113
     borderLeft: 0
@@ -55,8 +55,8 @@ MonoBehaviour:
     paddingTop: 9
     paddingBottom: 6
   - name: 2
-    x: 791
-    y: 1935
+    x: 903
+    y: 1778
     width: 111
     height: 113
     borderLeft: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
     paddingBottom: 6
   - name: 3
     x: 791
-    y: 1821
+    y: 1664
     width: 111
     height: 113
     borderLeft: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
     paddingBottom: 6
   - name: 4
     x: 903
-    y: 1935
+    y: 1664
     width: 111
     height: 113
     borderLeft: 0
@@ -93,20 +93,20 @@ MonoBehaviour:
     paddingRight: 8
     paddingTop: 9
     paddingBottom: 6
-  - name: jump
-    x: 0
-    y: 1024
-    width: 313
-    height: 259
+  - name: achievments
+    x: 791
+    y: 1892
+    width: 109
+    height: 156
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
     paddingLeft: 9
-    paddingRight: 8
-    paddingTop: 6
-    paddingBottom: 6
-  - name: jump2
+    paddingRight: 10
+    paddingTop: 50
+    paddingBottom: 50
+  - name: jump
     x: 534
     y: 1342
     width: 313
@@ -119,6 +119,32 @@ MonoBehaviour:
     paddingRight: 8
     paddingTop: 6
     paddingBottom: 6
+  - name: jump2
+    x: 562
+    y: 1024
+    width: 313
+    height: 259
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 9
+    paddingRight: 8
+    paddingTop: 6
+    paddingBottom: 6
+  - name: leaderboard
+    x: 901
+    y: 1905
+    width: 116
+    height: 143
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 6
+    paddingRight: 6
+    paddingTop: 56
+    paddingBottom: 57
   - name: long
     x: 0
     y: 1284
@@ -132,6 +158,19 @@ MonoBehaviour:
     paddingRight: 13
     paddingTop: 8
     paddingBottom: 8
+  - name: plate
+    x: 0
+    y: 984
+    width: 561
+    height: 299
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: Rounded-Rectangle-31
     x: 0
     y: 1602
@@ -146,8 +185,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 1
   - name: Tittle
-    x: 314
-    y: 1151
+    x: 0
+    y: 851
     width: 589
     height: 132
     borderLeft: 0
@@ -159,8 +198,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: v
-    x: 903
-    y: 1707
+    x: 848
+    y: 1488
     width: 111
     height: 113
     borderLeft: 0
@@ -172,8 +211,8 @@ MonoBehaviour:
     paddingTop: 9
     paddingBottom: 6
   - name: x
-    x: 791
-    y: 1707
+    x: 848
+    y: 1374
     width: 111
     height: 113
     borderLeft: 0
@@ -184,6 +223,19 @@ MonoBehaviour:
     paddingRight: 8
     paddingTop: 9
     paddingBottom: 6
+  - name: X
+    x: 791
+    y: 1608
+    width: 55
+    height: 55
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 36
+    paddingRight: 37
+    paddingTop: 36
+    paddingBottom: 37
   mPixelSize: 1
   mReplacement: {fileID: 0}
   mCoordinates: 0

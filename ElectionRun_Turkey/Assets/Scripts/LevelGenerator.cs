@@ -351,20 +351,12 @@ public class LevelGenerator : MonoBehaviour
 	//my change
 	public UpgradeScreenController upgradeScreenController;
 	public GameObject PlaytButton;
-	//public GameObject VButton;
 	public GameObject upgradeScreen;
-	//public GameObject MainMenuecreen;
 
 	public void ShowUpgradeBeforePlay ()
 	{
-		//GameEndScreen.SetActive(false);
 		OnUpgradeClick ();
 		upgradeScreenController.Display ();
-
-
-//		VButton.SetActive (false);
-//		PlaytButton.SetActive (true);
-
 			
 	}
 
@@ -379,9 +371,7 @@ public class LevelGenerator : MonoBehaviour
 		Analytics.gua.sendEventHit("Action", "Retry");
 
 	}
-
-	//my change 
-
+	
 	public void OnRetryClickfromUpgradeScreen()
 	{
 
@@ -391,11 +381,6 @@ public class LevelGenerator : MonoBehaviour
 		GameEndScreen.SetActive (false);
 		// Analytics
 		Analytics.gua.sendEventHit("Action", "Retry");
-
-		//my change 
-		//upgradeScreen.SetActive (false);
-		//PlaytButton.SetActive (false);
-		//VButton.SetActive (true);
 
 	}
 
@@ -407,8 +392,6 @@ public class LevelGenerator : MonoBehaviour
 	{
 		GameEndScreen.SetActive(false);
 		UpgradeScreenController.instance.Closed += UpgradeClosed;
-
-		AppManager.HideBannerAd();
 	}
 
 

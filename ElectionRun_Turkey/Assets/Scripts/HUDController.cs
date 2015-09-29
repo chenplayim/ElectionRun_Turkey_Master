@@ -119,18 +119,7 @@ public class HUDController : MonoBehaviour {
 		menu.OpenPauseMenu();
 	}
 
-	//
-	//
-	//
 
-	
-
-//	IEnumerator XpIenumerat ()
-//	{
-//		XPLabelController ();
-//		
-//	} 
-//	
 	void Update() {
 		if (Input.GetKeyDown(KeyCode.Escape)) {
 			OnClickMenu();
