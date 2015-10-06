@@ -669,7 +669,7 @@ public class PlayerController : MonoBehaviour
 	{
 
 		TimesDied ++;
-		print (TimesDied);
+		//print (TimesDied);
 		if (TimesDied == 3)
 		{
 			MyHeyzap.instence.ShowInterstitialAd();

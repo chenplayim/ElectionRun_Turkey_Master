@@ -184,8 +184,6 @@
      <Compile Include="Assets\Scripts\MainMenuController.cs" />
      <Compile Include="Assets\Scripts\MyDialogController.cs" />
      <Compile Include="Assets\Scripts\MyGameCenterScript.cs" />
-     <Compile Include="Assets\Scripts\MyUnityAds.cs" />
-     <Compile Include="Assets\Scripts\MyVungle.cs" />
      <Compile Include="Assets\Scripts\NameInputController.cs" />
      <Compile Include="Assets\Scripts\NewAnalytics.cs" />
      <Compile Include="Assets\Scripts\PauseMenuController.cs" />

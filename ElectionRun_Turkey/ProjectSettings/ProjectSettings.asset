@@ -112,8 +112,8 @@ PlayerSettings:
     type: 3}
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 2
-  AndroidKeystoreName: /Users/playim/Desktop/playim.keystore
-  AndroidKeyaliasName: play.im
+  AndroidKeystoreName: secimkosusu2015.keystore
+  AndroidKeyaliasName: secimkosusu2015
   resolutionDialogBanner: {fileID: 2800000, guid: 2033f1dffc07e444ea41aa4df032b29b,
     type: 3}
   m_BuildTargetIcons:

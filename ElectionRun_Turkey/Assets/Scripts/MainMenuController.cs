@@ -76,14 +76,8 @@ public class MainMenuController : MonoBehaviour
 	{
 			GameEndScreen.SetActive (false);
 			GameEndScreenPanel.depth = 1;
-			// Show character selection on first play
-//		if (PlayerPrefs.GetInt("Saved", 0) != 1)  {
-//			CharacterSelectionGUI.SetActive(true);
-//			CharacterSelectionGUI.GetComponent<CharacterSelectionController>().Closed += OnFirstCharacterSelectFinished;
-//		}
-//		else {
+
 			StartGame();
-//		}
 
 	}
 
@@ -169,8 +163,6 @@ public class MainMenuController : MonoBehaviour
 		gameObject.SetActive(false);
 
 		LevelGenerator.instance.RestartGame(opponentName, opponentDistance, opponentHat, challengerFBID, challengerCharacter);
-		//Debug.Log(opponentName + opponentDistance + opponentHat + challengerFBID + challengerCharacter);
-		//LevelGenerator.instance.RestartGame("Myself", 30, "Opera Mask", challengerFBID, challengerCharacter);
 
 		// Analytics
 		Analytics.gua.sendEventHit("Action", "Start Game");
@@ -263,45 +255,16 @@ public class MainMenuController : MonoBehaviour
 		mUpgradeNotification.SetActive(Config.instance.HasBuyableUpgrades());
 
 		Time.timeScale = 1;
-		//SetRandomHat(transform.FindChild("GameTitle/HeadBoy/Hat").gameObject);
-		//SetRandomHat(transform.FindChild("GameTitle/HeadGirl/Hat").gameObject);
 
-		
 	}
-
-	//
-	//
-	//
-//	void SetRandomHat(GameObject hatNode)
-//	{
-//		//HatInfo hat = StoreController.GetHatInfoAt( (int)(UnityEngine.Random.value * StoreController.GetNumHats()) );
-//		UI2DSprite sprite = hatNode.GetComponent<UI2DSprite>();
-//		GameObject hatPrefab = Resources.Load<GameObject>("Hats/" + hat.PrefabName);
-//		sprite.sprite2D = Multires.GetSprite(hat.SpriteName);
-//
-//		float width = Screen.width > Screen.height ? Screen.width : Screen.height;
-//		int myWidth = (int)sprite.sprite2D.textureRect.width;
-//		int myHeight = (int)sprite.sprite2D.textureRect.height;
-//		
-//		if (width >= Multires.instance.MaxWidth) {
-//			myWidth = myWidth/2;
-//			myHeight = myHeight/2;
-//		}
-//		sprite.width = myWidth; 
-//		sprite.height = myHeight;
-//
-//		hatNode.transform.localPosition = Vector3.Scale(hatPrefab.transform.localPosition, new Vector3(100, 100, 1));
-//	}
-
-	/**
-	 * 
-	 */
 
 
 	public GameObject DialogControllerOBG;
 	public GameObject ChallengeListControllerOBG;
-	//int TimeToShowInterstisialOnQuit;
-
+	
+	int NextTimeToShowInterstisialOnQuit;
+	bool CanshowInterstisial = false;
+	int TimesToShowInterstisial = 0;
 
 	void Update()
 	{
@@ -310,22 +273,29 @@ public class MainMenuController : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Escape)  && DialogController.IsConfermationOpen == false && ChallengeListController.challengeListOpen == false)
 		{
 
-			//TimeToShowInterstisialOnQuit = System.DateTime.Now.Day;
-			//print (TimeToShowInterstisialOnQuit);
-//
-//			if (System.DateTime.Now.Hour > PlayerPrefs.GetInt("TimeToShowInterstisialOnQuit"))
-//			{
-				MyHeyzap.instence.ShowInterstitialAd();
-			//	PlayerPrefs.SetInt("TimeToShowInterstisialOnQuit" , System.DateTime.Now.Day);
-			//}
-
 			// Confirm game quit
 			GameObject go = transform.parent.FindChild("ConfirmationDialog").gameObject;
 			DialogController dlgControl = go.GetComponent<DialogController>();
 			dlgControl.Closed += OnConfirmExit;
-			dlgControl.SetMessage("Are you sure you want to leave?");
+			dlgControl.SetMessage("Çıkmak istediğinizden eminmisiniz?");
 			go.SetActive(true);
-			//StartCoroutine(WaitForSecond());
+
+			//MyHeyzap
+			if (System.DateTime.Now.Hour > PlayerPrefs.GetInt("NextTimeToShowInterstisialOnQuit"))
+			{
+				CanshowInterstisial = true;
+				NextTimeToShowInterstisialOnQuit = System.DateTime.Now.AddHours(12).Hour;
+				PlayerPrefs.SetInt("NextTimeToShowInterstisialOnQuit" , NextTimeToShowInterstisialOnQuit);
+			}
+			
+			if (CanshowInterstisial = true && TimesToShowInterstisial == 0)
+			{
+				MyHeyzap.instence.ShowInterstitialAd();
+				CanshowInterstisial = false;
+				TimesToShowInterstisial = 1;
+			}
+
+
 		}
 		#endif
 
@@ -347,17 +317,7 @@ public class MainMenuController : MonoBehaviour
 			ChallengeListController.challengeListOpen = false;
 		}
 	}
-
-
-
-//		public void PhysycalBackController ()
-//		{
-//			ChallengeListController.challengeListOpen = false;
-//			DialogController.IsConfermationOpen = false;
-//			print ("sdfgsdfg");
-//		}
-
-
+	
 
 	public GameObject StarsEffect;
 	public UILabel CoinsLabelinUpgrade;
@@ -391,7 +351,6 @@ public class MainMenuController : MonoBehaviour
 	{
 		// Exit game
 		if (ok) Application.Quit();
-		//PlayerPrefs.Flush();
 	}
 
 	//
