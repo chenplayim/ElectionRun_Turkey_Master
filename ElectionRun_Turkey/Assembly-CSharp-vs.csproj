@@ -115,6 +115,11 @@
      <Compile Include="Assets\GooglePlayGames\Platforms\Android\NoopProxy.cs" />
      <Compile Include="Assets\GooglePlayGames\Platforms\Android\OnStateResultProxy.cs" />
      <Compile Include="Assets\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
+     <Compile Include="Assets\GooglePlayGames\Platforms\iOS\IOSClient.cs" />
+     <Compile Include="Assets\GooglePlayGames\Platforms\iOS\IOSRtmpClient.cs" />
+     <Compile Include="Assets\GooglePlayGames\Platforms\iOS\MiniJSON.cs" />
+     <Compile Include="Assets\GooglePlayGames\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
+     <Compile Include="Assets\GooglePlayGames\Platforms\iOS\iOSTbmpClient.cs" />
      <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
      <Compile Include="Assets\Multires\Script\AssetCollection.cs" />
      <Compile Include="Assets\Multires\Script\AssetResolutionSwapper.cs" />
@@ -256,6 +261,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt-rPT\common_strings.xml" />
      <None Include="Assets\Plugins\Android\facebook\bin\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ar\common_strings.xml" />
+     <None Include="Assets\Editor\template-AndroidManifest.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\common_strings.xml" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_search_bar_layout.xml" />
@@ -297,6 +303,7 @@
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_image.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\values\colors.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rGB\common_strings.xml" />
+     <None Include="Assets\Editor\template-GPGSParams.txt" />
      <None Include="Assets\Plugins\Android\Heyzap\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\AndroidManifest_GameThrive_GCM_Template.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\auth_strings.xml" />
@@ -389,6 +396,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ca\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\common_signin_btn_icon_light.xml" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+     <None Include="Assets\Editor\projsettings.txt" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_login_activity_layout.xml" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rTW\common_strings.xml" />

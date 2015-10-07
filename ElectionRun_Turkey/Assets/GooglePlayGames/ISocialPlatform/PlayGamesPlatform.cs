@@ -168,7 +168,7 @@ namespace GooglePlayGames {
             // make a platform-specific Play Games client
             if (mClient == null) {
                 Logger.d("Creating platform-specific Play Games client.");
-               // mClient = PlayGamesClientFactory.GetPlatformPlayGamesClient();
+                mClient = PlayGamesClientFactory.GetPlatformPlayGamesClient();
             }
 
             // authenticate!

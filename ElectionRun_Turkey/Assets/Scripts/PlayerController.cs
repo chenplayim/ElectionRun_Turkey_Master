@@ -750,13 +750,23 @@ public class PlayerController : MonoBehaviour
 			if (Social.localUser.authenticated) {
 
 				// First death
-				Social.ReportProgress(AppManager.ACHIEVEMENT_BOOM_YOURE_DOWN, 100, null);
+				//Social.ReportProgress(AppManager.ACHIEVEMENT_BOOM_YOURE_DOWN, 100, null);
 
 				hUDController.TellGooglePlayXPAchivments();
-				// 50 Coins
+				// 100 Coins
 				if (Config.instance.LifetimeCoins >= 50)
 				{
-					Social.ReportProgress(AppManager.ACHIEVEMENT_50_COIN, 100, null);
+					Social.ReportProgress(AppManager.ACHIEVEMENT_100_COIN, 100, null);
+				}
+				// 500 Coins
+				if (Config.instance.LifetimeCoins >= 50)
+				{
+					Social.ReportProgress(AppManager.ACHIEVEMENT_500_COIN, 100, null);
+				}
+				// 1000 Coins
+				if (Config.instance.LifetimeCoins >= 50)
+				{
+					Social.ReportProgress(AppManager.ACHIEVEMENT_1000_COIN, 100, null);
 				}
 			}
 

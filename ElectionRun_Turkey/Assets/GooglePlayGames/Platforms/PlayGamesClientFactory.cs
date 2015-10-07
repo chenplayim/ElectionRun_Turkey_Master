@@ -19,22 +19,20 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using GooglePlayGames.BasicApi;
 
-#if UNITY_ANDROID
-
 namespace GooglePlayGames {
     internal class PlayGamesClientFactory {
         internal static IPlayGamesClient GetPlatformPlayGamesClient() {
             if (Application.isEditor) {
                 return new GooglePlayGames.BasicApi.DummyClient();
             }
-//#if UNITY_ANDROID
+#if UNITY_ANDROID
             return new GooglePlayGames.Android.AndroidClient();
-//#elif UNITY_IPHONE
-          //  return new GooglePlayGames.IOS.IOSClient();
-//#else
+#elif UNITY_IPHONE
+            return new GooglePlayGames.IOS.IOSClient();
+#else
             return new GooglePlayGames.BasicApi.DummyClient();
-
+#endif
         }
     }
 }
-#endif
+

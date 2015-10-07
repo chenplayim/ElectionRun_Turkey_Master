@@ -35,20 +35,17 @@ public class HUDController : MonoBehaviour {
 	public PlayerController playerController;
 
 	#if UNITY_ANDROID
-	public const string NOVICE_UNLOCKED = "CgkI8f6Lxd8eEAIQCQ";
-	public const string ROOKIE_UNLOCKED = "CgkI8f6Lxd8eEAIQCg";
-	public const string BEGINNER_UNLOCKED = "CgkI8f6Lxd8eEAIQCw";
-	public const string TALENTED_UNLOCKED = "CgkI8f6Lxd8eEAIQDA";
-	public const string SKILLED_UNLOCKED = "CgkI8f6Lxd8eEAIQDQ";
-	public const string INTERMEDIATE_UNLOCKED = "CgkI8f6Lxd8eEAIQDg";
-	public const string SKILLFUL_UNLOCKED = "CgkI8f6Lxd8eEAIQDw";
-	public const string SEASONED_UNLOCKED = "CgkI8f6Lxd8eEAIQEA";
-	public const string PROFICIENT_UNLOCKED = "CgkI8f6Lxd8eEAIQEQ";
-	public const string EXPERIENCED_UNLOCKED = "CgkI8f6Lxd8eEAIQEg";
-	public const string MASTER_UNLOCKED = "CgkI8f6Lxd8eEAIQEw";
-	public const string RUNNING_GOD_UNLOCKED = "CgkI8f6Lxd8eEAIQFA";
-	public const string MASTER_OF_UNIVERSE_UNLOCKED = "CgkI8f6Lxd8eEAIQFQ";
+	public const string New_Seat = "CgkIpP-liokGEAIQAQ";
+	public const string Rising_Star = "CgkIpP-liokGEAIQA";
+	public const string Meteor = "CgkIpP-liokGEAIQAw";
+	public const string Lobbist = "CgkIpP-liokGEAIQBA";
+	public const string New_Member = "CgkIpP-liokGEAIQBQ";
+	public const string Party_Member = "CgkIpP-liokGEAIQBg";
+	public const string Prime_Minister = "CgkIpP-liokGEAIQBw";
+
 	#endif
+
+
 
 	#if UNITY_IPHONE
 	public const string NOVICE_UNLOCKED = "NU1234";
@@ -142,17 +139,6 @@ public class HUDController : MonoBehaviour {
 	public static void XPRefresh()
 	{
 
-//		//print ("ENABLED!!!!");
-//
-//		if (PlayersXPStatus == "")
-//		{
-//			PlayersXPStatus = "Bla";
-//		}
-//		else
-//		{
-//			PlayersXPStatus = PlayerPrefs.GetString ("PlayersXPStatus");
-//		}
-//		
 		PlayersXPStatus = PlayerPrefs.GetString ("PlayersXPStatus");
 		BestScore = PlayerPrefs.GetFloat ("BestScore");
 		NextBestScore = PlayerPrefs.GetFloat ("NextBestScore");
@@ -511,95 +497,95 @@ public class HUDController : MonoBehaviour {
 		if (mBestScore < 100 && mBestScore > 50) {
 			
 			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(NOVICE_UNLOCKED , 100, null);
+			Social.ReportProgress(New_Seat , 100, null);
 			#endif
 			
 		}
 		if (mBestScore < 200 && mBestScore > 100) {
 			
 			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(ROOKIE_UNLOCKED , 100, null);
+			Social.ReportProgress(Rising_Star , 100, null);
 			#endif
 			;
 		}
 		if (mBestScore < 350 && mBestScore > 200) {
 			
 			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(BEGINNER_UNLOCKED , 100, null);
+			Social.ReportProgress(Meteor , 100, null);
 			#endif
 			
 		}
 		if (mBestScore < 500 && mBestScore > 350) {
 			
 			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(TALENTED_UNLOCKED  , 100, null);
+			Social.ReportProgress(Lobbist  , 100, null);
 			#endif
 			
 		}
 		if (mBestScore < 700 && mBestScore > 500) {
 			
 			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(SKILLED_UNLOCKED  , 100, null);
+			Social.ReportProgress(New_Member  , 100, null);
 			#endif
 			
 		}
 		if (mBestScore < 900 && mBestScore > 700) {
 			
 			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(INTERMEDIATE_UNLOCKED  , 100, null);
+			Social.ReportProgress(Party_Member  , 100, null);
 			#endif
 			
 		}
 		if (mBestScore < 1150 && mBestScore > 900) {
 			
 			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(SKILLFUL_UNLOCKED  , 100, null);
+			Social.ReportProgress(Prime_Minister  , 100, null);
 			#endif
 			
 		}
-		if (mBestScore < 1400 && mBestScore > 1150) {
-			
-			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(SEASONED_UNLOCKED  , 100, null);
-			#endif
-			
-		}
-		if (mBestScore < 1700 && mBestScore > 1400) {
-			
-			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(PROFICIENT_UNLOCKED  , 100, null);
-			#endif
-			
-		}
-		if (mBestScore < 2000 && mBestScore > 1700) {
-			
-			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(EXPERIENCED_UNLOCKED  , 100, null);
-			#endif
-			
-		}
-		if (mBestScore < 2400 && mBestScore > 2000) {
-			
-			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(MASTER_UNLOCKED  , 100, null);
-			#endif
-			
-		}
-		if (mBestScore < 2900 && mBestScore > 2400) {
-			
-			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(RUNNING_GOD_UNLOCKED  , 100, null);
-			#endif
-			
-		}
-		if (mBestScore < 3500 && mBestScore > 2900) {
-			
-			#if (UNITY_ANDROID || UNITY_IPHONE)
-			Social.ReportProgress(MASTER_OF_UNIVERSE_UNLOCKED  , 100, null);
-			#endif
-			
-		}
-		
+//		if (mBestScore < 1400 && mBestScore > 1150) {
+//			
+//			#if (UNITY_ANDROID || UNITY_IPHONE)
+//			Social.ReportProgress(SEASONED_UNLOCKED  , 100, null);
+//			#endif
+//			
+//		}
+//		if (mBestScore < 1700 && mBestScore > 1400) {
+//			
+//			#if (UNITY_ANDROID || UNITY_IPHONE)
+//			Social.ReportProgress(PROFICIENT_UNLOCKED  , 100, null);
+//			#endif
+//			
+//		}
+//		if (mBestScore < 2000 && mBestScore > 1700) {
+//			
+//			#if (UNITY_ANDROID || UNITY_IPHONE)
+//			Social.ReportProgress(EXPERIENCED_UNLOCKED  , 100, null);
+//			#endif
+//			
+//		}
+//		if (mBestScore < 2400 && mBestScore > 2000) {
+//			
+//			#if (UNITY_ANDROID || UNITY_IPHONE)
+//			Social.ReportProgress(MASTER_UNLOCKED  , 100, null);
+//			#endif
+//			
+//		}
+//		if (mBestScore < 2900 && mBestScore > 2400) {
+//			
+//			#if (UNITY_ANDROID || UNITY_IPHONE)
+//			Social.ReportProgress(RUNNING_GOD_UNLOCKED  , 100, null);
+//			#endif
+//			
+//		}
+//		if (mBestScore < 3500 && mBestScore > 2900) {
+//			
+//			#if (UNITY_ANDROID || UNITY_IPHONE)
+//			Social.ReportProgress(MASTER_OF_UNIVERSE_UNLOCKED  , 100, null);
+//			#endif
+//			
+//		}
+//		
 	}
 
 

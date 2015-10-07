@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedAppIndex: 0
   appIds:
-  - 1026496417380405
+  - 435414236665491
   appLabels:
-  - Election Game
+  - Secim Kosusu 2015
   cookie: 1
   logging: 1
   status: 1

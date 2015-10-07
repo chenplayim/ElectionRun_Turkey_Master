@@ -33,7 +33,7 @@ public class AppManager : MonoBehaviour
 	//
 	//
 	//
-	#if UNITY_IPHONE
+	#if UNITY_IOS
 	public const string LEADERBOARD_NAME_IOS = "Top Runners";
 	public const string LEADERBOARD_ID_IOS = "TP1234";
 
@@ -50,19 +50,14 @@ public class AppManager : MonoBehaviour
 
 
 	#if UNITY_ANDROID
-	public const string LEADERBOARD_NAME = "Top Daily Runners";
-	public const string LEADERBOARD_ID = "CgkI8f6Lxd8eEAIQAA";
+	//Google play services
+	public const string LEADERBOARD_ID = "CgkIpP-liokGEAIQAA";
 
-	//
-	//
-	//
-	public const string ACHIEVEMENT_FIRST_COIN = "CgkI8f6Lxd8eEAIQAg";
-	public const string ACHIEVEMENT_50_COIN = "CgkIhvOU7qIWEAIQDg";
-	public const string ACHIEVEMENT_BOOM_YOURE_DOWN = "CgkIhvOU7qIWEAIQDw";
-	//public const string ACHIEVEMENT_RUNNING_LIKE_THE_WIND = "CgkI8f6Lxd8eEAIQBQ";
-	//public const string ACHIEVEMENT_WELCOME_BACK = "CgkI8f6Lxd8eEAIQBg";	
+	public const string ACHIEVEMENT_FIRST_COIN = "CgkIpP-liokGEAIQCg";
+	public const string ACHIEVEMENT_100_COIN = "CgkIpP-liokGEAIQCw";
+	public const string ACHIEVEMENT_500_COIN = "CgkIpP-liokGEAIQDA";
+	public const string ACHIEVEMENT_1000_COIN = "CgkIpP-liokGEAIQDQ";
 
-	public const int RUNNING_LIKE_THE_WIND_DISTANCE = 500;
 	#endif
 	//
 	//
@@ -770,7 +765,7 @@ public class AppManager : MonoBehaviour
 		if (FacebookManager.instance.isInitialized) OnFBInitialized();
 		else FacebookManager.initialized += OnFBInitialized;
 
-		//StoreController.LoadHats();
+		ConnectToGooglePlay();
 	
 		Time.timeScale = 1;
 
